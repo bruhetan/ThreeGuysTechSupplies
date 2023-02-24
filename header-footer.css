@@ -36,7 +36,9 @@
 
 .header-logo:hover {
     width: 68px;
-    background-color: rgba(85, 105, 111, 0.247);
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    background-color: #057f8d;
 }
 
 .header-links-list {
