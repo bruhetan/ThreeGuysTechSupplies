@@ -29,9 +29,17 @@
 
 .header-logo {
 
-    /* border: 1px solid black; */
-    width: 68px;
+    width: 66px;
+    border-radius: 45px;
+    padding: 2px;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
 
+}
+
+.header-logo:hover {
+    width: 68px;
+    background-color: rgba(85, 105, 111, 0.247);
 }
 
 .header-links-list {
@@ -53,7 +61,8 @@
     color: black;
     font-size: 20px;
     margin: 0 5px;
-    transition: 0.15s;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
     border-radius: 8px;
 
 }
