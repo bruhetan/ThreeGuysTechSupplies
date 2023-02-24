@@ -11,8 +11,6 @@
 }
 
 .logo-container {
-
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -20,8 +18,6 @@
 }
 
 .logo-link {
-
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: row;
      
@@ -43,8 +39,6 @@
 }
 
 .header-links-list {
-
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
     margin: 0;
@@ -54,8 +48,6 @@
 }
 
 .header-link {
-
-    /* border: 1px solid black; */
     padding: 16px 15px;
     text-decoration: none;
     color: black;
