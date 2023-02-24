@@ -20,6 +20,7 @@
 .logo-link {
     display: flex;
     flex-direction: row;
+    border-radius: 45px;
      
 }
 
