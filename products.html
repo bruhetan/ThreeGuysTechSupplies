@@ -1,62 +1,36 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
+<head>
+    <title content="test"></title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Three Guys: Tech Supplies">
+    <meta name="description" content="Tech Supplies Products Page">
+    <meta name="keywords" content="Prebuilds, Computer parts, RAM, CPU, GPU, PSU">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header-footer.css" type="text/css">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
+</head>
 
-        <title content="test"></title>
-        <meta charset="UTF-8">
-        <meta name="author" content="Three Guys: Tech Supplies">
-        <meta name="description" content="Tech Supplies Products Page">
-        <meta name="keywords" content="Prebuilds, Computer parts, RAM, CPU, GPU, PSU">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="header-footer.css" type="text/css">
-        <link rel="stylesheet" href="main.css" type="text/css">
-        <link rel="stylesheet" href="normalize.css" type="text/css">
-        
-    </head>
-
-    <body>
-
-        <header>
-
-            <nav class="nav-bar">
-                <div class="logo-container">
-                    <a class="logo-link" href="main.html">
-                        <img class="header-logo" src="logo-images/png/logo-no-squares-no-background-black.png" alt="brand logo">
-                    </a>
-                </div>
-
-                <div class="">
-                    <ul class="header-links-list">
-                        <li><a class="header-link" href="main.html">Home</a></li>
-                        <li><a class="header-link" href="products.html">Products</a></li>
-                        <li><a class="header-link" href="about.html">About Us</a></li>
-                        <li><a class="header-link" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-
-        </header>
-
-        <main>
-
-            <section class="first-section">
-                <div class="first-div">
-                    <p>products page</p>
-                </div>
-            </section>
-
-        </main>
-
-        <footer class="footer">
-            
-            <div class="copyright-info">
-                <p>&copy;Three Guys Tech Supplies 2023</p>
+<body>
+    <div id="header"></div>
+    <main>
+        <section class="first-section">
+            <div class="first-div">
+                <p>products page</p>
             </div>
-            <div class="links">
-                <a class="contact-link" href="contact.html">Contact Us</a>
-            </div>
+        </section>
+    </main>
+    <div id="header"></div>
+</body>
 
-        </footer>
-    </body>
 </html>
