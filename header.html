@@ -9,51 +9,55 @@
         <nav class="nav-bar">
             <div class="logo-container">
                 <a class="logo-link" href="main.html">
-                    <img class="header-logo" src="logo-images/png/logo-no-squares-no-background-black.png"
+                    <img class="logo-image" src="logo-images/png/logo-no-squares-no-background-black.png"
                         alt="brand logo">
                 </a>
             </div>
 
-            <nav id="desktop-navbar" class="desktop">
+            <div id="desktop-navbar" class="desktop">
                 <ul class="header-links-list">
                     <li><a class="header-link" href="home.html">Home</a></li>
                     <li><a class="header-link" href="products.html">Products</a></li>
                     <li><a class="header-link" href="about.html">About Us</a></li>
                     <li><a class="header-link" href="contact.html">Contact</a></li>
                 </ul>
-            </nav>
-
-            <nav id="mobile-navbar" class="mobile">
-                <ul class="header-links-list">
-                    <li><a class="header-link" href="home.html">Home</a></li>
-                    <li><a class="header-link" href="products.html">Products</a></li>
-                    <li><a class="header-link" href="about.html">About Us</a></li>
-                    <li><a class="header-link" href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <button id="mobile-nav-toggle" class="mobile">
-                <span class="icon"></span>
-            </button>
+            </div>
+            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars">test</i>
+              </a>
 
             <script>
-                const navBar = document.getElementById('navbar');
-                const mobileNavToggle = document.getElementById('mobile-nav-toggle');
-                window.addEventListener('resize', function() {
-                    if (window.innerWidth < 700) {
-                        navBar.classList.add('mobile');
-                        navBar.classList.remove('desktop');
-                        mobileNavToggle.classList.add('active');
+                const desktopNav = document.getElementById('desktop-navbar');
+                const mobileNav = document.getElementById('mobile-navbar');
+                function toggleNavigation() {
+                    if (window.innerWidth < 500) {
+                        desktopNav.style.display = 'none';
+                        mobileNav.style.display = 'block';
                     } else {
-                        navBar.classList.add('desktop');
-                        navBar.classList.remove('mobile');
-                        mobileNavToggle.classList.remove('active');
+                        desktopNav.style.display = 'block';
+                        mobileNav.style.display = 'none';
                     }
-                });
-
-                mobileNavToggle.addEventListener('click', function() {
-                    mobileNavToggle.classList.toggle('active');
-                });
+                };
+                function toggleMobileNav() {
+                    var x = document.getElementById('mobile-nav')
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }};
+                window.addEventListener('resize', toggleNavigation);
+                toggleNavigation();
             </script>
+        </nav>
+
+        <nav id="mobile-navbar" class="mobile">
+            <ul class="header-links-list">
+                <li><a class="header-link" href="home.html">Home</a></li>
+                <li><a class="header-link" href="products.html">Products</a></li>
+                <li><a class="header-link" href="about.html">About Us</a></li>
+                <li><a class="header-link" href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 </body>
