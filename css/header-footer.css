@@ -36,7 +36,6 @@
     padding: 2px;
     transition: background-color 0.2s, -webkit-filter 0.2s, width 0.2s;
     transition-timing-function: ease-in-out;
-
 }
 
 .header-logo:hover {
