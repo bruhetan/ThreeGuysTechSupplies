@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <head>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/header-footer.css" type="text/css">
 </head>
 
@@ -8,13 +9,13 @@
     <header>
         <nav class="nav-bar">
             <div class="logo-container">
-                <a class="logo-link" href="main.html">
-                    <img class="logo-image" src="logo-images/png/logo-no-squares-no-background-black.png"
+                <a class="logo-link" href="home.html">
+                    <img class="logo-image" src="images/png/logo-no-squares-no-background-black.png"
                         alt="brand logo">
                 </a>
             </div>
 
-            <div id="desktop-navbar" class="desktop">
+            <div id="desktop-navbar" class="desktop-navbar">
                 <ul class="header-links-list">
                     <li><a class="header-link" href="home.html">Home</a></li>
                     <li><a class="header-link" href="products.html">Products</a></li>
@@ -23,35 +24,37 @@
                 </ul>
             </div>
             
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars">test</i>
+            <a href="javascript:void(0);" class="mobile-nav-button" onclick="toggleMobileNav()">
+                <img src="images/navigation-bar.png">
               </a>
 
             <script>
                 const desktopNav = document.getElementById('desktop-navbar');
                 const mobileNav = document.getElementById('mobile-navbar');
                 function toggleNavigation() {
-                    if (window.innerWidth < 500) {
+                    if (window.innerWidth < 600) {
                         desktopNav.style.display = 'none';
-                        mobileNav.style.display = 'block';
                     } else {
                         desktopNav.style.display = 'block';
-                        mobileNav.style.display = 'none';
+                        mobileNav.style.display = 'block';
                     }
                 };
+                var test;
                 function toggleMobileNav() {
-                    var x = document.getElementById('mobile-nav')
-                    if (x.style.display === "block") {
-                        x.style.display = "none";
+                    var mobileNav = document.getElementById('mobile-navbar');
+                    if (test === 1) {
+                        mobileNav.style.transform = "translateY(0%)"
+                        test = 0;
                     } else {
-                        x.style.display = "block";
+                        mobileNav.style.transform = "translateY(-200%)";
+                        test = 1;
                     }};
                 window.addEventListener('resize', toggleNavigation);
                 toggleNavigation();
             </script>
         </nav>
 
-        <nav id="mobile-navbar" class="mobile">
+        <nav id="mobile-navbar" class="mobile-navbar">
             <ul class="header-links-list">
                 <li><a class="header-link" href="home.html">Home</a></li>
                 <li><a class="header-link" href="products.html">Products</a></li>
