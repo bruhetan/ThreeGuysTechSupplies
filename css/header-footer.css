@@ -65,7 +65,7 @@
 }
 
 .mobile-navbar {
-    display: block;
+    display: none;
 }
 
 .mobile-navbar .header-links-list {
@@ -75,12 +75,6 @@
     list-style-type: none;
 }
 
-.mobile-navbar {
-    transform: translateY(-200%);
-    transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
-}
-
-
 .mobile-navbar .header-link {
     display: block;
     padding: 10px 10px;
@@ -89,7 +83,7 @@
     font-size: 18px;
     margin: 6px 6px;
     background-color:rgb(206, 206, 206);
-    transition: background-color 0.1s, color 0.2s;
+    transition: background-color 0.2s, color 0.2s;
     transition-timing-function: ease-in-out;
     border-radius: 8px;
 }
@@ -114,7 +108,6 @@
 }
 
 .footer {
-
     border-top: 1px solid black;
     background-color: rgb(110, 137, 146);
     display: flex;
@@ -123,13 +116,10 @@
     align-items: center;
     width: 100%;
     min-width: 200px;
-
 }
 
 .copyright-info, .links a {
-
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-shadow: black 1px 1px 1px;
-
 }
