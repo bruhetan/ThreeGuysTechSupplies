@@ -7,7 +7,7 @@
 
 <body>
     <header>
-        <nav class="nav-bar">
+        <nav id="nav-bar">
             <div class="logo-container">
                 <a class="logo-link" href="home.html">
                     <img class="logo-image" src="images/png/logo-no-squares-no-background-black.png"
@@ -15,7 +15,7 @@
                 </a>
             </div>
 
-            <div id="desktop-navbar" class="desktop-navbar">
+            <div id="desktop-navbar">
                 <ul class="header-links-list">
                     <li><a class="header-link" href="home.html">Home</a></li>
                     <li><a class="header-link" href="products.html">Products</a></li>
@@ -24,23 +24,29 @@
                 </ul>
             </div>
             
-            <a href="javascript:void(0);" class="mobile-nav-button" onclick="toggleMobileNav()">
+            <a href="javascript:void(0);" id="mobile-nav-button" onclick="toggleMobileNav()">
                 <img src="images/navigation-bar.png">
               </a>
 
             <script>
                 const desktopNav = document.getElementById('desktop-navbar');
                 const mobileNav = document.getElementById('mobile-navbar');
+                const mobileNavButton = document.getElementById('mobile-nav-button');
+                const navBar = document.getElementById('nav-bar');
                 function toggleNavigation() {
                     if (window.innerWidth < 600) {
                         desktopNav.style.display = 'none';
+                        mobileNav.style.display = 'none';
+                        mobileNavButton.style.display = 'block';
+                        navBar.style.justifyContent = 'space-between';
                     } else {
                         desktopNav.style.display = 'block';
                         mobileNav.style.display = 'none';
+                        mobileNavButton.style.display = 'none';
+                        navBar.style.justifyContent = 'space-around';
                     }
                 };
                 function toggleMobileNav() {
-                    var mobileNav = document.getElementById('mobile-navbar')
                     if (mobileNav.style.display === "block") {
                         mobileNav.style.display = "none";
                     } else {
@@ -51,7 +57,7 @@
             </script>
         </nav>
 
-        <nav id="mobile-navbar" class="mobile-navbar">
+        <nav id="mobile-navbar">
             <ul class="header-links-list">
                 <li><a class="header-link" href="home.html">Home</a></li>
                 <li><a class="header-link" href="products.html">Products</a></li>
