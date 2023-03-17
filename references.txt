@@ -1,0 +1,7 @@
+ram: https://www.canadacomputers.com/product_info.php?cPath=24_311_1326&item_id=090226
+cpu: https://www.canadacomputers.com/product_info.php?cPath=4_64_1969&item_id=183431
+psu: https://www.canadacomputers.com/product_info.php?cPath=33_1938&item_id=103031
+gpu: https://www.canadacomputers.com/product_info.php?cPath=38_516&item_id=136302
+prebuild: https://www.canadacomputers.com/product_info.php?cPath=7_4527&item_id=211772
+magnifying glass icon: https://stock.adobe.com/ca/images/search-icon-button-symbol-vector-magnifying-glass-symbol-look-pictogram/226093347
+email icon: https://www.flaticon.com/free-icon/email_2989993
