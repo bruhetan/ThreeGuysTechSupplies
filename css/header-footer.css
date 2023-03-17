@@ -125,8 +125,16 @@
     min-width: 200px;
 }
 
-.copyright-info, .links a {
+.copyright-info, .footer-links a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-shadow: black 1px 1px 1px;
+}
+
+.footer-links a:not(:last-child) {
+    border-width: 0;
+    border-right: 2px;
+    border-style: solid;
+    border-color: rgb(211, 211, 211);
+    padding-right: 6px;
 }
