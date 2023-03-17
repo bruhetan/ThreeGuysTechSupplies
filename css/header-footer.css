@@ -45,6 +45,7 @@
 }
 
 #desktop-navbar .header-links-list {
+    padding: 0;
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -69,12 +70,20 @@
 
 #mobile-nav-button {
     display: block;
+    margin: 20px;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 4px;
+}
+
+#mobile-nav-button img {
+    height: 32px;
+    margin: 0 4px;
 }
 
 #mobile-navbar .header-links-list {
     margin: 0;
-    padding: 1px 0;
-    background-color:rgb(238, 238, 238);
+    padding: 1px;
+    background-color: rgb(238, 238, 238);
     list-style-type: none;
 }
 
@@ -85,22 +94,16 @@
     color: black;
     font-size: 18px;
     margin: 6px 6px;
-    background-color:rgb(206, 206, 206);
+    border-width: 2px;
+    background-color: rgb(222, 222, 222);
     transition: background-color 0.2s, color 0.2s;
     transition-timing-function: ease-in-out;
     border-radius: 8px;
 }
 
-#mobile-nav-button img {
-    height: 32px;
-    margin: 0 30px;
-}
-
-.header-link:hover{
-
+.header-link:hover,
+#mobile-navbar .header-link:hover {
     background-color: salmon;
-    color: white;
-
 }
 
 .topnav a.icon {
