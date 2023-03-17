@@ -123,12 +123,17 @@
     align-items: center;
     width: 100%;
     min-width: 200px;
+    height: 40px;
 }
 
 .copyright-info, .footer-links a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-shadow: black 1px 1px 1px;
+}
+
+.copyright-info p {
+    margin: 0;
 }
 
 .footer-links a:not(:last-child) {
