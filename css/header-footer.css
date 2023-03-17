@@ -1,4 +1,4 @@
-.nav-bar {
+#nav-bar {
 
     border-bottom: 2px solid black;
     background-color: lightblue;
@@ -6,14 +6,24 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    min-width: 600px;
 
 }
 
 .logo-container {
+    margin: 6px 10px;
     display: flex;
     flex-direction: row;
     justify-content: end;
+
+}
+
+.logo-image {
+
+    width: 66px;
+    border-radius: 45px;
+    padding: 2px;
+    transition: background-color 0.2s, -webkit-filter 0.2s, width 0.2s;
+    transition-timing-function: ease-in-out;
 
 }
 
@@ -29,52 +39,82 @@
     background-color: salmon;
 }
 
-.header-logo {
-
-    width: 66px;
-    border-radius: 45px;
-    padding: 2px;
-    transition: background-color 0.2s, -webkit-filter 0.2s, width 0.2s;
-    transition-timing-function: ease-in-out;
-
-}
-
-.header-logo:hover {
-    width: 68px;
+.logo-image:hover {
     -webkit-filter: invert(1);
     filter: invert(1);
 }
 
-.header-links-list {
+#desktop-navbar .header-links-list {
+    padding: 0;
     display: flex;
     flex-direction: row;
-    margin: 0;
-    padding: 28px 0;
     list-style-type: none;
 
 }
 
-.header-link {
+#desktop-navbar .header-link {
     padding: 16px 15px;
     text-decoration: none;
     color: black;
-    font-size: 20px; 
+    font-size: 20px;
     margin: 0 5px;
     transition: background-color 0.2s, color 0.2s;
     transition-timing-function: ease-in-out;
     border-radius: 8px;
-
 }
 
-.header-link:hover{
+#mobile-navbar {
+    display: none;
+    border-bottom: 2px solid black;
+}
 
+#mobile-nav-button {
+    display: block;
+    margin: 20px;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 4px;
+}
+
+#mobile-nav-button img {
+    height: 32px;
+    margin: 0 4px;
+}
+
+#mobile-navbar .header-links-list {
+    margin: 0;
+    padding: 1px;
+    background-color: rgb(238, 238, 238);
+    list-style-type: none;
+}
+
+#mobile-navbar .header-link {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    margin: 6px 6px;
+    border-width: 2px;
+    background-color: rgb(222, 222, 222);
+    transition: background-color 0.2s, color 0.2s;
+    transition-timing-function: ease-in-out;
+    border-radius: 8px;
+}
+
+.header-link:hover,
+#mobile-navbar .header-link:hover {
     background-color: salmon;
-    color: white;
+}
 
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .footer {
-
     border-top: 1px solid black;
     background-color: rgb(110, 137, 146);
     display: flex;
@@ -82,14 +122,11 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    min-width: 600px;
-
+    min-width: 200px;
 }
 
 .copyright-info, .links a {
-
     color: rgb(255, 255, 255);
     text-decoration: none;
-    text-shadow: black 1px 1px 2px;
-
+    text-shadow: black 1px 1px 1px;
 }
