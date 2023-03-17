@@ -49,8 +49,10 @@
                 function toggleMobileNav() {
                     if (mobileNav.style.display === "block") {
                         mobileNav.style.display = "none";
+                        mobileNavButton.style.backgroundColor = 'rgba(0,0,0,0)';
                     } else {
                         mobileNav.style.display = "block";
+                        mobileNavButton.style.backgroundColor = 'rgb(170, 170, 170)';
                     }};
                 window.addEventListener('resize', toggleNavigation);
                 toggleNavigation();
