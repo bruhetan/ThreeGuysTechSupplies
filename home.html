@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-    </script>
+        </script>
     <script>
         $(function () {
             $("#header").load("header.html");
@@ -26,16 +26,83 @@
 
 <body>
     <div id="header"></div>
-        <main>
-            <section class="feature-products">
-                <img class="featured-images"src="images/feature-test-image.png"alt="Feature placeholder">
-            </section> 
-            <section class="first-section">
-                <div class="first-div">
-                    <p>home page</p>
-                </div>
-            </section>
-        </main>
+    <main>
+        <div class="featured-product">
+            <img class="featured-image active" src="images/feature-test-image.png" alt="Feature placeholder">
+            <img class="featured-image" src="images/logo/logo-black.png" alt="Feature placeholder">
+            <img class="featured-image" src="images/feature-test-image.png" alt="Feature placeholder">
+            <img class="featured-image" src="images/feature-test-image.png" alt="Feature placeholder">
+            <img class="featured-image" src="images/feature-test-image.png" alt="Feature placeholder">
+            <button class="prev" onclick="prevImage()">&#10094;</button>
+            <button class="next" onclick="nextImage()">&#10095;</button>
+            <script src="scripts/home/slider.js"></script>
+        </div>
+
+        <div class="DOTDY" id="format">
+            <h2>Deals of the day</h2>
+            <div class="it-box">
+                <a href="about.html">
+                    <div class="item">
+                        <img src="images/logo/logo-color.png" alt="">
+                        <div class="it-name">
+                            <p>Asus Tuf Gaming Geforce RTX 3070</p>
+                            <span>product number here</span>
+                        </div>
+                        <p>
+                            <span style="color:red">$950.34 </span><span
+                                style="text-decoration: line-through; color: black;">$1,345.00</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="it-box">
+                <a href="about.html">
+                    <div class="item">
+                        <img src="images/logo/logo-color.png" alt="">
+                        <div class="it-name">
+                            <p>Asus Tuf Gaming Geforce RTX 3070</p>
+                            <span>product number here</span>
+                        </div>
+                        <p>
+                            <span style="color:red">$950.34 </span><span
+                                style="text-decoration: line-through; color: black;">$1,345.00</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="it-box">
+                <a href="about.html">
+                    <div class="item">
+                        <img src="images/logo/logo-color.png" alt="">
+                        <div class="it-name">
+                            <p>Asus Tuf Gaming Geforce RTX 3070</p>
+                            <span>product number here</span>
+                        </div>
+                        <p>
+                            <span style="color:red">$950.34 </span><span
+                                style="text-decoration: line-through; color: black;">$1,345.00</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="it-box">
+                <a href="about.html">
+                    <div class="item">
+                        <img src="images/logo/logo-color.png" alt="">
+                        <div class="it-name">
+                            <p>Asus Tuf Gaming Geforce RTX 3070</p>
+                            <span>product number here</span>
+                        </div>
+                        <p>
+                            <span style="color:red">$950.34 </span><span
+                                style="text-decoration: line-through; color: black;">$1,345.00</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </main>
     <div id="footer"></div>
 </body>
 
