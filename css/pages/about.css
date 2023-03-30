@@ -1,5 +1,16 @@
-main {
+div#text {
     margin: auto;
     text-align: center;
     width: 70%;
+}
+
+div#top-logo {
+    background-color: rgb(1, 99, 128);
+    margin: auto;
+}
+
+img#top-logo {
+    display: block;
+    margin: auto;
+    height: 200px;
 }
