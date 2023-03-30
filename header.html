@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/header-footer.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -29,23 +30,14 @@
               </a>
 
             <script>
-                const desktopNav = document.getElementById('desktop-navbar');
                 const mobileNav = document.getElementById('mobile-navbar');
                 const mobileNavButton = document.getElementById('mobile-nav-button');
-                const navBar = document.getElementById('nav-bar');
-                function toggleNavigation() {
-                    if (window.innerWidth < 600) {
-                        desktopNav.style.display = 'none';
-                        mobileNav.style.display = 'none';
-                        mobileNavButton.style.display = 'block';
-                        navBar.style.justifyContent = 'space-between';
-                    } else {
-                        desktopNav.style.display = 'block';
-                        mobileNav.style.display = 'none';
-                        mobileNavButton.style.display = 'none';
-                        navBar.style.justifyContent = 'space-around';
+
+                function checkMobileBar() {
+                    if (window.innerWidth > 600) {
+                        mobileNav.style.display = "none";
                     }
-                };
+                }
                 function toggleMobileNav() {
                     if (mobileNav.style.display === "block") {
                         mobileNav.style.display = "none";
@@ -54,7 +46,7 @@
                         mobileNav.style.display = "block";
                         mobileNavButton.style.backgroundColor = 'rgb(170, 170, 170)';
                     }};
-                window.addEventListener('resize', toggleNavigation);
+                window.addEventListener('resize', checkMobileBar);
                 toggleNavigation();
             </script>
         </nav>

@@ -49,7 +49,6 @@
     display: flex;
     flex-direction: row;
     list-style-type: none;
-
 }
 
 #desktop-navbar .header-link {
@@ -69,7 +68,7 @@
 }
 
 #mobile-nav-button {
-    display: block;
+    display: none;
     margin: 20px;
     transition: background-color 0.2s ease-in-out;
     border-radius: 4px;
@@ -142,4 +141,16 @@
     border-style: solid;
     border-color: rgb(211, 211, 211);
     padding-right: 6px;
+}
+
+@media only screen and (max-width: 600px) {
+    #desktop-navbar {
+        display: none;
+    }
+    #mobile-nav-button {
+        display: block;
+    }
+    #nav-bar {
+        justify-content: space-between;
+    }
 }
