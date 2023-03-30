@@ -15,10 +15,39 @@ div#line-separator {
     width: 100%;
 }
 
+div#form-start {
+    margin: 20px 0;
+}
+
+.dropdown-form {
+    display: none;
+}
+
 select {
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(226, 226, 226);
     border-radius: 10px;
     border-style: none;
     outline: none;
     padding: 10px 20px;
+}
+
+input,
+textarea {
+    box-sizing: border-box;
+    background-color: rgb(226, 226, 226);
+    border-radius: 10px;
+    border-style: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    max-width: 500px;
+    width: 100%;
+}
+
+textarea {
+    height: 200px;
+}
+
+input:last-child {
+    width: 290px;
+    background-color: rgb(196, 224, 188);
 }
