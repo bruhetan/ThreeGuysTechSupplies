@@ -1,3 +1,5 @@
-div#title {
+main {
+    margin: auto;
     text-align: center;
+    width: 70%;
 }
