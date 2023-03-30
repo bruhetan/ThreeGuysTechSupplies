@@ -4,6 +4,21 @@ main {
     width: 70%;
 }
 
-main p {
+main div#title p {
     font-size: 1.2em;
+}
+
+div#line-separator {
+    background-color: rgb(0, 0, 0);
+    height: 1px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+select {
+    background-color: rgb(211, 211, 211);
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+    padding: 10px 20px;
 }
