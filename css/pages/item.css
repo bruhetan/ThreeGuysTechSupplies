@@ -22,3 +22,17 @@ main {
     width: 800px;
 
 }
+
+.item-info img {
+
+    width: 200px;
+    height: 200px;
+
+}
+
+p .checkmark {
+
+    width: 12px;
+    height: 12px;
+
+}
