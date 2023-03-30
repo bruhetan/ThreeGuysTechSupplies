@@ -138,6 +138,26 @@
     </main>
 
     <div id="footer"></div>
+
+    <script>
+
+
+        $(document).ready(function(){
+
+            $('input[type="radio"]').click(function(){
+
+                var inputValue = $(this).attr("value");
+                var targetBox = $("#" + inputValue);
+                $(".item-info").not(targetBox).hide();
+                $(targetBox).show();
+            });
+
+        });
+
+        defer
+
+    </script>
+
 </body>
 
 </html>
