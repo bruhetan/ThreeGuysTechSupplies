@@ -38,12 +38,13 @@
             <p>Please select an option from the drop-down.</p>
             <select onchange="checkTopicSelection()">
                 <option value="0">Select a topic</option>
+                <option value="0">----------</option>
                 <option value="1">General Inquiry</option>
                 <option value="2">Shipping</option>
-                <option value="3">Purchasing</option>
-                <option value="4">Other</option>
+                <option value="3">Returns & Refunds</option>
             </select>
         </div>
+        <div id="line-separator"></div>
 
         <div id="general-inquiry" class="dropdown-form">
             <form onsubmit="submitForm()">
@@ -51,7 +52,7 @@
                 <input type="text" name="lastName" placeholder="Last Name" required><br>
                 <input type="email" name="email" placeholder="Email" required><br>
                 <input type="tel" name="phone" placeholder="Phone Number" required><br>
-                <textarea name="message" placeholder="Message" required></textarea><br>
+                <textarea name="message" placeholder="What do you need help with?" required></textarea><br>
                 <input type="submit" value="Submit">
             </form>
         </div>
@@ -63,10 +64,21 @@
                 <input type="text" name="lastName" placeholder="Last Name" required><br>
                 <input type="email" name="email" placeholder="Email" required><br>
                 <input type="tel" name="phone" placeholder="Phone Number" required><br>
-                <textarea name="message" placeholder="Message" required></textarea><br>
+                <textarea name="message" placeholder="What do you need help with?" required></textarea><br>
                 <input type="submit" value="Submit">
             </form>
         </div>
+
+        <div id="returns" class="dropdown-form">
+            <form onsubmit="submitForm()">
+                <input type="text" name="orderID" placeholder="Order ID" required><br>
+                <input type="text" name="firstName" placeholder="First Name" required><br>
+                <input type="text" name="lastName" placeholder="Last Name" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <input type="tel" name="phone" placeholder="Phone Number" required><br>
+                <textarea name="message" placeholder="Why do you want to return this product?" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
 
     </main>
     <div id="footer"></div>
@@ -81,16 +93,15 @@
 
     generalInquiry.style.display = "none";
     shipping.style.display = "none";
+    returns.style.display = "none";
             
         if(selectedOption === "1") {
             generalInquiry.style.display = "block";
         } else if(selectedOption === "2") {
             shipping.style.display = "block";
         } else if(selectedOption === "3") {
-            
-        } else if(selectedOption === "4") {
-            
-        }
+            returns.style.display = "block";            
+        } 
     }
 </script>
 
