@@ -15,10 +15,6 @@ div#about-us {
     width: 70%;
 }
 
-div#about-us ul {
-    text-align: left;
-}
-
 main p,
 main li {
     font-size: 1.2em;
