@@ -5,3 +5,4 @@ gpu: https://www.canadacomputers.com/product_info.php?cPath=38_516&item_id=13630
 prebuild: https://www.canadacomputers.com/product_info.php?cPath=7_4527&item_id=211772
 magnifying glass icon: https://stock.adobe.com/ca/images/search-icon-button-symbol-vector-magnifying-glass-symbol-look-pictogram/226093347
 email icon: https://www.flaticon.com/free-icon/email_2989993
+checkmark: https://www.iconsdb.com/green-icons/checkmark-icon.html
