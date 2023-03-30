@@ -36,7 +36,7 @@
         <div id="line-separator"></div>
         <div id="form-start">
             <p>Please select an option from the drop-down.</p>
-            <select>
+            <select onchange="checkTopicSelection()">
                 <option value="0">Select a topic</option>
                 <option value="1">General Inquiry</option>
                 <option value="2">Shipping</option>
@@ -44,8 +44,54 @@
                 <option value="4">Other</option>
             </select>
         </div>
+
+        <div id="general-inquiry" class="dropdown-extra">
+            <form onsubmit="submitForm()">
+                <input type="text" name="firstName" placeholder="First Name" required><br>
+                <input type="text" name="lastName" placeholder="Last Name" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <input type="tel" name="phone" placeholder="Phone Number" required><br>
+                <textarea name="message" placeholder="Message" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div id="shipping" class="dropdown-extra">
+            <form onsubmit="submitForm()">
+                <input type="text" name="shippingID" placeholder="Shipping ID" required><br>
+                <input type="text" name="firstName" placeholder="First Name" required><br>
+                <input type="text" name="lastName" placeholder="Last Name" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <input type="tel" name="phone" placeholder="Phone Number" required><br>
+                <textarea name="message" placeholder="Message" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
     </main>
     <div id="footer"></div>
 </body>
+
+<script>
+
+    function checkTopicSelection() {
+    var selectedOption = document.getElementsByTagName("select")[0].value;
+    var generalInquiry = document.getElementById('general-inquiry');
+    var shipping = document.getElementById('shipping');
+
+    generalInquiry.style.display = "none";
+    shipping.style.display = "none";
+            
+        if(selectedOption === "1") {
+            generalInquiry.style.display = "block";
+        } else if(selectedOption === "2") {
+            shipping.style.display = "block";
+        } else if(selectedOption === "3") {
+            
+        } else if(selectedOption === "4") {
+            
+        }
+    }
+</script>
 
 </html>
