@@ -1,0 +1,59 @@
+main {
+    margin: auto;
+    text-align: left;
+    width: 70%;
+}
+
+main div#title p {
+    font-size: 1.2em;
+}
+
+div#line-separator {
+    background-color: rgb(0, 0, 0);
+    height: 1px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+div#form-start {
+    margin: 20px 0;
+}
+
+.dropdown-form {
+    display: none;
+}
+
+select {
+    background-color: rgb(226, 226, 226);
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+    padding: 10px 20px;
+}
+
+input,
+textarea {
+    box-sizing: border-box;
+    background-color: rgb(226, 226, 226);
+    border-radius: 10px;
+    border-style: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    max-width: 500px;
+    width: 100%;
+}
+
+textarea {
+    height: 200px;
+}
+
+div#returns textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    background-color: rgb(196, 224, 188);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 20px;
+}

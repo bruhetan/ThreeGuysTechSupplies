@@ -1,0 +1,21 @@
+div#top-logo {
+    background-color: rgb(1, 99, 128);
+    margin: auto;
+}
+
+img#top-logo {
+    display: block;
+    margin: auto;
+    height: 200px;
+}
+
+div#about-us {
+    margin: auto;
+    text-align: left;
+    width: 70%;
+}
+
+main p,
+main li {
+    font-size: 1.2em;
+}
