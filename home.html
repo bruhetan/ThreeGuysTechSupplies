@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-    </script>
+        </script>
     <script>
         $(function () {
             $("#header").load("header.html");
@@ -26,16 +26,22 @@
 
 <body>
     <div id="header"></div>
-        <main>
-            <section class="feature-products">
-                <img class="featured-images"src="images/feature-test-image.png"alt="Feature placeholder">
-            </section> 
-            <section class="first-section">
-                <div class="first-div">
-                    <p>home page</p>
-                </div>
-            </section>
-        </main>
+    <main>
+        <div class="featured-product">
+            <img class="featured-image active" src="images/feature-test-image.png" alt="Feature placeholder">
+            <img class="featured-image" src="images/logo/logo-black.png" alt="Feature placeholder">
+            <img class="featured-image" src="images/feature-test-image.png" alt="Feature placeholder">
+            <img class="featured-image" src="images/feature-test-image.png" alt="Feature placeholder">
+            <img class="featured-image" src="images/feature-test-image.png" alt="Feature placeholder">
+            <button class="prev" onclick="prevImage()">&#10094;</button>
+            <button class="next" onclick="nextImage()">&#10095;</button>
+            <script src="Java Script/Home/slider.js"></script>
+        </div>
+
+        <div class="DOTDY">
+
+        </div>
+    </main>
     <div id="footer"></div>
 </body>
 

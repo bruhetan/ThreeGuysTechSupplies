@@ -1,6 +1,38 @@
-.featured-images{
-    width:100%;
-    height:200px;
-    object-fit: cover;
+.featured-product {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
 }
 
+.featured-image {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.featured-image.active {
+    opacity: 1;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+.featured-product button.prev {
+    left: 10px;
+}
+.featured-product button.next {
+    right: 10px;
+}
