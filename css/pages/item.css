@@ -23,6 +23,12 @@ main {
 
 }
 
+.item-info {
+
+    display: none;
+
+}
+
 .item-info img {
 
     width: 200px;
