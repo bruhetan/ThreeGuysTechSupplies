@@ -32,9 +32,69 @@ button {
     cursor: pointer;
     padding: 3px 7px;
 }
+
 .featured-product button.prev {
     left: 10px;
 }
+
 .featured-product button.next {
     right: 10px;
+}
+
+#format {
+    padding: 30px 80px;
+}
+
+.DOTDY {
+    text-align: center;
+}
+
+.DOTDY .it-box {
+    display: inline-block;
+    width: 25%;
+    margin: 0 2.5%;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+
+.DOTDY .item {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: 0.6s ease;
+}
+
+.DOTDY .item:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+.DOTDY .item p {
+    margin: 0px;
+    font-size: 16px;
+}
+
+.DOTDY img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.DOTDY .item .it-name {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.DOTDY .item .it-name span {
+    color: gray;
+    font-size: 11px;
+}
+
+.DOTDY .item .it-name p {
+    margin: 0px;
+    font-size: 16px;
 }
