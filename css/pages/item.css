@@ -1,0 +1,20 @@
+main {
+
+    display: flex;
+    height: 600px;
+
+}
+
+.sidebar-div {
+
+    /* debugging borders  */
+    border: 1px solid black;
+
+}
+
+.item-div {
+
+    /* debugging borders  */
+    border: 1px solid blue;
+
+}
