@@ -47,7 +47,13 @@ textarea {
     height: 200px;
 }
 
-input:last-child {
-    width: 290px;
+div#returns textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
     background-color: rgb(196, 224, 188);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 20px;
 }
