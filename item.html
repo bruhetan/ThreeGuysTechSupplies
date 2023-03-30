@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title content="test"></title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Three Guys: Tech Supplies">
+    <meta name="description" content="Tech Supplies Products Page">
+    <meta name="keywords" content="Prebuilds, Computer parts, RAM, CPU, GPU, PSU">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="images/logo/Tab-Icon.png" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/pages/item.css" type="text/css">
+    <link rel="stylesheet" href="css/header-footer.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script> -->
+</head>
+
+<body>
+    <header>
+        <nav id="nav-bar">
+            <div class="logo-container">
+                <a class="logo-link" href="home.html">
+                    <img class="logo-image" src="images/logo/logo-no-squares-no-background-black.png"
+                     alt="brand logo">
+                </a>
+            </div>
+
+            <div id="desktop-navbar">
+                <ul class="header-links-list">
+                    <li><a class="header-link" href="home.html">Home</a></li>
+                    <li><a class="header-link" href="products.html">Products</a></li>
+                    <li><a class="header-link" href="about.html">About Us</a></li>
+                    <li><a class="header-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <a href="javascript:void(0);" id="mobile-nav-button" onclick="toggleMobileNav()">
+                <img src="images/navigation-bar.png">
+              </a>
+
+            <script>
+                const desktopNav = document.getElementById('desktop-navbar');
+                const mobileNav = document.getElementById('mobile-navbar');
+                const mobileNavButton = document.getElementById('mobile-nav-button');
+                const navBar = document.getElementById('nav-bar');
+                function toggleNavigation() {
+                    if (window.innerWidth < 600) {
+                        desktopNav.style.display = 'none';
+                        mobileNav.style.display = 'none';
+                        mobileNavButton.style.display = 'block';
+                        navBar.style.justifyContent = 'space-between';
+                    } else {
+                        desktopNav.style.display = 'block';
+                        mobileNav.style.display = 'none';
+                        mobileNavButton.style.display = 'none';
+                        navBar.style.justifyContent = 'space-around';
+                    }
+                };
+                function toggleMobileNav() {
+                    if (mobileNav.style.display === "block") {
+                        mobileNav.style.display = "none";
+                        mobileNavButton.style.backgroundColor = 'rgba(0,0,0,0)';
+                    } else {
+                        mobileNav.style.display = "block";
+                        mobileNavButton.style.backgroundColor = 'rgb(170, 170, 170)';
+                    }};
+                window.addEventListener('resize', toggleNavigation);
+                toggleNavigation();
+            </script>
+        </nav>
+
+        <nav id="mobile-navbar">
+            <ul class="header-links-list">
+                <li><a class="header-link" href="home.html">Home</a></li>
+                <li><a class="header-link" href="products.html">Products</a></li>
+                <li><a class="header-link" href="about.html">About Us</a></li>
+                <li><a class="header-link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        
+
+    </main>
+
+    <footer class="footer">
+        <div class="copyright-info">
+            <p>&copy;Three Guys Tech Supplies 2023</p>
+        </div>
+        <div class="footer-links">
+            <a class="contact-link" href="contact.html">Contact Us</a>
+            <a class="references-link" href="references.html">References</a>
+        </div>
+    </footer>
+</body>
+
+</html>
