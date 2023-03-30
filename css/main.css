@@ -30,7 +30,7 @@ input[type="submit"] {
     padding: 10px 20px;
 }
 
-div#line-separator {
+div#horizontal-line-separator {
     background-color: rgb(0, 0, 0);
     height: 1px;
     margin: 20px 0;
