@@ -1,6 +1,7 @@
 .featured-product {
     background-size: cover;
     background-repeat: no-repeat;
+    border-bottom: solid 2px black;
     width: 100%;
     height: 200px;
     position: relative;
@@ -41,12 +42,9 @@ button {
     right: 10px;
 }
 
-#format {
-    padding: 30px 80px;
-}
-
 .dealOfTheDay {
     text-align: center;
+    padding: 30px 80px;
 }
 
 #dealOfTheDayItems {
@@ -62,7 +60,7 @@ button {
 .dealOfTheDay .item-box {
     box-sizing: border-box;
     margin: 0;
-    width: 80%;
+    width: 90%;
 }
 
 .dealOfTheDay .item {
@@ -86,6 +84,12 @@ button {
     }
     .dealOfTheDay .item-box {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .dealOfTheDay {
+        padding: 30px 20px;
     }
 }
 
