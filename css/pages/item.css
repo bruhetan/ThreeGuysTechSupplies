@@ -2,6 +2,7 @@ main {
 
     display: flex;
     height: 600px;
+    justify-content: center;
 
 }
 
@@ -9,6 +10,8 @@ main {
 
     /* debugging borders  */
     border: 1px solid black;
+    width: 400px;
+    margin-right: 10px;
 
 }
 
@@ -16,5 +19,6 @@ main {
 
     /* debugging borders  */
     border: 1px solid blue;
+    width: 800px;
 
 }
