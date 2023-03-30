@@ -8,7 +8,10 @@ main {
     margin: 0;
 }
 
-input,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"],
 textarea {
     box-sizing: border-box;
     background-color: rgb(226, 226, 226);
