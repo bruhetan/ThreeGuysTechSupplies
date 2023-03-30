@@ -45,11 +45,11 @@ button {
     padding: 30px 80px;
 }
 
-.DOTDY {
+.dealOfTheDay {
     text-align: center;
 }
 
-.DOTDY .it-box {
+.dealOfTheDay .item-box {
     display: inline-block;
     width: 25%;
     margin: 0 2.5%;
@@ -58,7 +58,7 @@ button {
 }
 
 
-.DOTDY .item {
+.dealOfTheDay .item {
     width: 23%;
     min-width: 250px;
     padding: 10px 12px;
@@ -69,32 +69,32 @@ button {
     transition: 0.6s ease;
 }
 
-.DOTDY .item:hover {
+.dealOfTheDay .item:hover {
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.4);
 }
 
-.DOTDY .item p {
+.dealOfTheDay .item p {
     margin: 0px;
     font-size: 16px;
 }
 
-.DOTDY img {
+.dealOfTheDay img {
     width: 100%;
     border-radius: 20px;
 }
 
-.DOTDY .item .it-name {
+.dealOfTheDay .item .item-name {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 5px;
 }
 
-.DOTDY .item .it-name span {
+.dealOfTheDay .item .item-name span {
     color: gray;
     font-size: 11px;
 }
 
-.DOTDY .item .it-name p {
+.dealOfTheDay .item .item-name p {
     margin: 0px;
     font-size: 16px;
 }
