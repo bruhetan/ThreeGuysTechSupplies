@@ -12,12 +12,21 @@ main {
     box-sizing: border-box;
     width: 240px;
     height: 35%;
-    margin: 20px 40px;
-    padding: 15px;
+    margin: 20px 0;
+    padding: 20px;
     background-color: rgb(226, 226, 226);
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px rgb(92, 92, 92);
+    border-radius: 10px;
+    /* box-shadow: 0px 0 8px rgb(93, 93, 93); */
 
+}
+
+.sidebar-div h3 {
+    margin: 0;
+}
+
+.sidebar-div ul {
+    margin: 0;
+    margin-top: 5px;
 }
 
 .sidebar-list {
@@ -57,8 +66,17 @@ input[type=radio]:hover {
 
 input[type=radio]:checked {
 
-    background-color: lightblue;
+    background-color: rgb(95, 150, 169);
     border: 2px solid black;
+
+}
+
+div#vertical-line-separator {
+
+    border-left: 1px solid rgb(0, 0, 0);
+    height: 500px;
+    width: 1px;
+    margin: 20px 30px;
 
 }
 
@@ -142,12 +160,8 @@ img.checkmark {
         border-radius: 0;
         box-shadow: 0 0 0 0;
     }
-    .sidebar-div h3 {
-        margin: 0;
-    }
-    .sidebar-div ul {
-        margin: 0;
-        margin-top: 5px;
+    div#vertical-line-separator {
+        display: none;
     }
     .item-div {
         width: 100%;
