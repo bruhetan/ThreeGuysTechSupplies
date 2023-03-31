@@ -193,3 +193,10 @@ button {
     margin: 0px;
     font-size: 16px;
 }
+
+.categorie-box a{
+    text-decoration: none;
+}
+.categorie-box:visited{
+    color: black ;
+}
