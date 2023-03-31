@@ -60,9 +60,9 @@
 
         <div class="item-div">
 
-            <div class="item-info" id="cpu-item">
+            <div class="item-info cpu-item" id="cpu-item1">
                 <h2>Ryzen 7 5700x</h2>
-                <img src="./images/assets/cpu.jpg" alt="cpu">
+                <img src="./images/item-images/CPU/AMD-Ryzen-7.jpg" alt="cpu">
                 <p class="model-number-text">Model#487801</p>
                 <p class="price-text">$245.99</p>
                 <p>Experience maximum performance for games with the AMD Ryzen 7 5800X Desktop Processor. With its eight cores and 16 threads, 
@@ -72,7 +72,7 @@
                 <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
             </div>
 
-            <div class="item-info" id="gpu-item">
+            <div class="item-info gpu-item" id="gpu-item1">
                 <h2>Quadro RTX 4000</h2>
                 <img src="./images/assets/gpu.jpg" alt="gpu">
                 <p class="model-number-text">Model#243524</p>
@@ -83,7 +83,7 @@
                 <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
             </div>
 
-            <div class="item-info" id="ram-item">
+            <div class="item-info ram-item" id="ram-item1">
                 <h2>Vengeance 16GB DDR5 RAM</h2>
                 <img src="./images/assets/ram.jpg" alt="ram">
                 <p class="model-number-text">Model#617914</p>
@@ -99,7 +99,7 @@
                 <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
             </div>
 
-            <div class="item-info" id="psu-item">
+            <div class="item-info psu-item" id="psu-item1">
                 <h2>Thermaltake SMART 700W</h2>
                 <img src="./images/assets/psu.jpg" alt="psu">
                 <p class="model-number-text">Model#621793</p>
@@ -113,7 +113,7 @@
                 <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
             </div>
 
-            <div class="item-info" id="pre-build-item">
+            <div class="item-info pre-build-item" id="pre-build-item1">
                 <h2>Cyberpower Pre-Built Desktop Computer</h2>
                 <img id="pre-build-img" src="./images/assets/pre-build.jpg" alt="pre-build">
                 <p class="model-number-text">Model#984202</p>
@@ -157,7 +157,7 @@
             $('input[type="radio"]').click(function(){
 
                 var inputValue = $(this).attr("value");
-                var targetBox = $("#" + inputValue);
+                var targetBox = $("." + inputValue);
                 $(".item-info").not(targetBox).hide();
                 $(targetBox).show();
             });
