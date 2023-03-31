@@ -87,6 +87,20 @@ input[type=radio]:checked {
 
 }
 
+.model-number-text {
+
+    color: grey;
+    margin-top: 4px;
+    font-size: 12px;
+
+}
+
+.price-text {
+
+    font-size: 28px;
+
+}
+
 img.checkmark {
 
     width: 12px;
