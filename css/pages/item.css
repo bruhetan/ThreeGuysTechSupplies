@@ -28,6 +28,12 @@ main {
     
 }
 
+.sidebar-list li {
+
+    margin-top: 10px;
+
+}
+
 .item-div {
 
     /* debugging borders  */
