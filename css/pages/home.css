@@ -196,6 +196,8 @@ button {
 
 .categorie-box a{
     text-decoration: none;
+    color: black;
+
 }
 .categorie-box:visited{
     color: black ;
