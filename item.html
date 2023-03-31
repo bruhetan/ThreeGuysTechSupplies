@@ -72,6 +72,50 @@
                 <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
             </div>
 
+            <div class="item-info cpu-item" id="cpu-item2">
+                <hr>
+                <h2>Ryzen 5 5600x</h2>
+                <img src="./images/item-images/CPU/AMD-Ryzen-5.jpg" alt="cpu">
+                <p class="model-number-text">Model#487802</p>
+                <p class="price-text">$215.99</p>
+                <p>Level up your computing experience with the boxed AMD Ryzen 5 5600X Desktop Processor with a Wraith Stealth 
+                    Cooler. Featuring six cores and 12 threads, get high-speed performance with a base clock of 3.7GHz and a 
+                    max boost clock of 4.6GHz in addition to 32MB of L3 cache. Designed for socket AM4 motherboards using the 
+                    powerful Zen 3 architecture, this 7nm 5th gen Ryzen processor has various technologies that can handle 
+                    content creation and today's games.</p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+            
+            <div class="item-info cpu-item" id="cpu-item3">
+                <hr>
+                <h2>Ryzen 9 7950x</h2>
+                <img src="./images/item-images/CPU/AMD-Ryzen-9.jpg" alt="cpu">
+                <p class="model-number-text">Model#487803</p>
+                <p class="price-text">$565.99</p>
+                <p> AMD Ryzen 9 7950X processor can do it all with hyper fast single-core and multi-core performance 
+                    for the most demanding gamers and creators. When your PC has an AMD Ryzen™ 9 7950X processor, 
+                    the world&#8217;s most advanced PC processor1 for gamers, you can focus on what really matters: 
+                    being victorious on the digital battlefield.
+                    </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info cpu-item" id="cpu-item4">
+                <hr>
+                <h2>Intel Core i7-12700K</h2>
+                <img src="./images/item-images/CPU/Intel-Corei7-12gen.jpg" alt="cpu">
+                <p class="model-number-text">Model#487701</p>
+                <p class="price-text">$125.99</p>
+                <p>Fulfill any task at hand and more with the boxed Intel® Core™ i7-12700K Desktop Processor. 
+                    Stay competitive with its Hybrid Core architecture with the Intel 7 process that has 12 cores, 
+                    a combined performance of four Efficient-cores and eight 3.6 GHz Performance-cores, plus 20 
+                    threads to handle today's titles. This processor also has a 5 GHz Turbo Boost Max 3.0 frequency 
+                    with 25MB of Intel® Smart Cache for fast and reliable performance. With multiple advanced 
+                    technologies and support up to PCIe 5.0 and dual-channel DDR5 memory, take on more games and 
+                    projects with more performance.</p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
             <div class="item-info gpu-item" id="gpu-item1">
                 <h2>Quadro RTX 4000</h2>
                 <img src="./images/assets/gpu.jpg" alt="gpu">
@@ -80,6 +124,34 @@
                 <p>Designed, built and tested by NVIDIA, Quadro® desktop products are the #1 choice of millions of creative and technical users. Equipped 
                     with the world&#8217;s most powerful GPUs, large memory capacities, 8K display outputs, advanced features to drive real-time photorealistic 
                     rendering, AI-augmented workflows, VR environments and more, Quadro is built to accelerate a range of professional workflows.</p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info gpu-item" id="gpu-item2">
+                <h2>Asus-TUF-3060</h2>
+                <img src="./images/item-images/GPU/Asus-TUF-3060.jpg" alt="gpu">
+                <p class="model-number-text">Model#243525</p>
+                <p class="price-text">$249.99</p>
+                <p>Optimized for high-performance gaming, the ASUS TUF Gaming GeForce RTX™ 3060 V2 OC Edition LHR 
+                    Graphics Card will deliver seamless graphics with its buffed-up thermal design. Powered by 
+                    NVIDIA® GeForce RTX™ 3060 with LHR, it&#8217;s also combined with 12GB of GDDR6 memory, triple 
+                    Axial-tech fans, dual BIOS, and a metal backplate to give you the power you need for serious 
+                    gaming.
+                </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info gpu-item" id="gpu-item3">
+                <h2>ROG Strix GeForce RTX 4090 OC Edition</h2>
+                <img src="./images/item-images/GPU/ROG Strix GeForce RTX 4090 OC Edition.jpg" alt="gpu">
+                <p class="model-number-text">Model#243524</p>
+                <p class="price-text">$319.99</p>
+                <p>The ROG Strix GeForce RTX™ 4090 is the ultimate GeForce GPU. It brings an enormous leap in 
+                    performance, efficiency, and AI-powered graphics. Experience ultra-high performance gaming, 
+                    incredibly detailed virtual worlds, unprecedented productivity, and new ways to create. It&#8217;s 
+                    powered by the NVIDIA Ada Lovelace architecture and comes with 24 GB of G6X memory to deliver 
+                    the ultimate experience for gamers and creators.
+                </p>
                 <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
             </div>
 
@@ -159,6 +231,18 @@
                 var inputValue = $(this).attr("value");
                 var targetBox = $("." + inputValue);
                 $(".item-info").not(targetBox).hide();
+                $(targetBox).show();
+            });
+
+        });
+
+        $(document).ready(function(){
+
+            $('input[type="radio"]').click(function(){
+
+                var inputValue = $(this).attr("value");
+                var targetBox = $("." + inputValue);
+                $(".product-brands").not(targetBox).hide();
                 $(targetBox).show();
             });
 
