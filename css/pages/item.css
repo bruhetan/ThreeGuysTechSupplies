@@ -26,9 +26,12 @@ main {
     
 }
 
+/* flex display is to get rid of weird space between button and text  */
 .sidebar-list li {
 
     margin-top: 10px;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -41,6 +44,7 @@ input[type=radio]{
     border: 2px solid rgb(97, 97, 97);
     border-radius: 50%;
     transition: 0.1s;
+    margin-right: 4px;
 
 }
 
