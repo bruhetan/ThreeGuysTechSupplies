@@ -11,6 +11,7 @@
     <link href="images/logo/Tab-Icon.png" rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/pages/item.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
@@ -19,20 +20,489 @@
         $(function () {
             $("#header").load("header.html");
             $("#footer").load("footer.html");
-        });
+        });  
     </script>
 </head>
 
 <body>
+
     <div id="header"></div>
+
     <main>
-        <section class="first-section">
-            <div class="first-div">
-                <p>products page</p>
+
+        <div class="sidebar-div">
+
+            <h3>Products</h3>
+            <ul class="sidebar-list">
+                <li>
+                    <input type="radio" id="cpu" name="item" value="cpu-item" checked>
+                    <label for="cpu">CPU</label>
+                </li>
+                <li>
+                    <input type="radio" id="gpu" name="item" value="gpu-item">
+                    <label for="gpu">GPU</label>
+                </li>
+                <li>
+                    <input type="radio" id="ram" name="item" value="ram-item">
+                    <label for="ram">RAM</label>
+                </li>
+                <li>
+                    <input type="radio" id="psu" name="item" value="psu-item">
+                    <label for="psu">PSU</label>
+                </li>
+                <li>
+                    <input type="radio" id="motherboard" name="item" value="motherboard-item">
+                    <label for="motherboard">MotherBoard</label>
+                </li>
+                <li>
+                    <input type="radio" id="ssd" name="item" value="ssd-item">
+                    <label for="ssd">SSD</label>
+                </li>
+                <li>
+                    <input type="radio" id="case" name="item" value="case-item">
+                    <label for="case">Cases</label>
+                </li>
+                <li>
+                    <input type="radio" id="coolerandfan" name="item" value="coolerandfan-item">
+                    <label for="coolerandfan">Cooler & Fans</label>
+                </li>
+                <li>
+                    <input type="radio" id="peripheral" name="item" value="peripheral-item">
+                    <label for="peripheral">Peripherals</label>
+                </li>
+                <li>
+                    <input type="radio" id="pre-build" name="item" value="pre-build-item">
+                    <label for="pre-build">Pre-Build</label>
+                </li>
+            </ul>
+
+        </div>
+        <div id="vertical-line-separator"></div>
+
+        <div class="item-div">
+
+            <div class="item-info cpu-item" id="cpu-item1">
+                <h2>Ryzen 7 5700x</h2>
+                <img src="./images/item-images/CPU/AMD-Ryzen-7.jpg" alt="cpu">
+                <p class="model-number-text">100-100000926WOF</p>
+                <p class="price-text">$245.99</p>
+                <p>Experience maximum performance for games with the AMD Ryzen 7 5800X Desktop Processor. With its eight cores and 16 threads, 
+                    lead your team to victory with a base clock of 3.8GHz and a max boost clock of 4.7GHz in addition to 32MB of L3 cache. Designed for 
+                    socket AM4 motherboards using the powerful Zen 3 architecture, this 7nm 5th gen Ryzen processor has various technologies to help you 
+                    climb the leaderboards.</p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
             </div>
-        </section>
+
+            <div class="item-info cpu-item" id="cpu-item2">
+                <hr>
+                <h2>Ryzen 5 5600x</h2>
+                <img src="./images/item-images/CPU/AMD-Ryzen-5.jpg" alt="cpu">
+                <p class="model-number-text">100-100000065BOX</p>
+                <p class="price-text">$215.99</p>
+                <p>Level up your computing experience with the boxed AMD Ryzen 5 5600X Desktop Processor with a Wraith Stealth 
+                    Cooler. Featuring six cores and 12 threads, get high-speed performance with a base clock of 3.7GHz and a 
+                    max boost clock of 4.6GHz in addition to 32MB of L3 cache. Designed for socket AM4 motherboards using the 
+                    powerful Zen 3 architecture, this 7nm 5th gen Ryzen processor has various technologies that can handle 
+                    content creation and today's games.</p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+            
+            <div class="item-info cpu-item" id="cpu-item3">
+                <hr>
+                <h2>Ryzen 9 7950x</h2>
+                <img src="./images/item-images/CPU/AMD-Ryzen-9.jpg" alt="cpu">
+                <p class="model-number-text">100-100000059WOF</p>
+                <p class="price-text">$565.99</p>
+                <p> AMD Ryzen 9 7950X processor can do it all with hyper fast single-core and multi-core performance 
+                    for the most demanding gamers and creators. When your PC has an AMD Ryzen™ 9 7950X processor, 
+                    the world&#8217;s most advanced PC processor1 for gamers, you can focus on what really matters: 
+                    being victorious on the digital battlefield.
+                    </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info cpu-item" id="cpu-item4">
+                <hr>
+                <h2>Intel Core i7-12700K</h2>
+                <img src="./images/item-images/CPU/Intel-Corei7-12gen.jpg" alt="cpu">
+                <p class="model-number-text">BX8071512700K</p>
+                <p class="price-text">$125.99</p>
+                <p>Fulfill any task at hand and more with the boxed Intel® Core™ i7-12700K Desktop Processor. 
+                    Stay competitive with its Hybrid Core architecture with the Intel 7 process that has 12 cores, 
+                    a combined performance of four Efficient-cores and eight 3.6 GHz Performance-cores, plus 20 
+                    threads to handle today's titles. This processor also has a 5 GHz Turbo Boost Max 3.0 frequency 
+                    with 25MB of Intel® Smart Cache for fast and reliable performance. With multiple advanced 
+                    technologies and support up to PCIe 5.0 and dual-channel DDR5 memory, take on more games and 
+                    projects with more performance.</p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info gpu-item" id="gpu-item1">
+                <h2>Quadro RTX 4000</h2>
+                <img src="./images/assets/gpu.jpg" alt="gpu">
+                <p class="model-number-text">VCQRTX4000-PB</p>
+                <p class="price-text">$99.99</p>
+                <p>Designed, built and tested by NVIDIA, Quadro® desktop products are the #1 choice of millions of creative and technical users. Equipped 
+                    with the world&#8217;s most powerful GPUs, large memory capacities, 8K display outputs, advanced features to drive real-time photorealistic 
+                    rendering, AI-augmented workflows, VR environments and more, Quadro is built to accelerate a range of professional workflows.</p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info gpu-item" id="gpu-item2">
+                <hr>
+                <h2>Asus-TUF-3060 V2</h2>
+                <img src="./images/item-images/GPU/Asus-TUF-3060.jpg" alt="gpu">
+                <p class="model-number-text">TUF-RTX3060-O12G-V2-GAMING</p>
+                <p class="price-text">$249.99</p>
+                <p>Optimized for high-performance gaming, the ASUS TUF Gaming GeForce RTX™ 3060 V2 OC Edition LHR 
+                    Graphics Card will deliver seamless graphics with its buffed-up thermal design. Powered by 
+                    NVIDIA® GeForce RTX™ 3060 with LHR, it&#8217;s also combined with 12GB of GDDR6 memory, triple 
+                    Axial-tech fans, dual BIOS, and a metal backplate to give you the power you need for serious 
+                    gaming.
+                </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info gpu-item" id="gpu-item3">
+                <hr>
+                <h2>ROG Strix GeForce RTX 4090 OC Edition</h2>
+                <img src="./images/item-images/GPU/ROG Strix GeForce RTX 4090 OC Edition.jpg" alt="gpu">
+                <p class="model-number-text">Model#243526</p>
+                <p class="price-text">$319.99</p>
+                <p>The ROG Strix GeForce RTX™ 4090 is the ultimate GeForce GPU. It brings an enormous leap in 
+                    performance, efficiency, and AI-powered graphics. Experience ultra-high performance gaming, 
+                    incredibly detailed virtual worlds, unprecedented productivity, and new ways to create. It&#8217;s 
+                    powered by the NVIDIA Ada Lovelace architecture and comes with 24 GB of G6X memory to deliver 
+                    the ultimate experience for gamers and creators.
+                </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info ram-item" id="ram-item1">
+                <h2>Vengeance 32GB DDR5 RAM</h2>
+                <img src="./images/assets/ram.jpg" alt="ram">
+                <p class="model-number-text">CMH32GX5M2B6000C40</p>
+                <p class="price-text">$65.99</p>
+                <p>
+                    Vengeance LPX memory is designed for high-performance overclocking. The heatspreader is made of pure aluminum for faster heat dissipation, 
+                    and the eight-layer PCB helps manage heat and provides superior overclocking headroom. Each IC is individually screened for performance 
+                    potential. The DDR4 form factor is optimized for the latest Intel X99 and 100 Series motherboards and offers higher frequencies, 
+                    greater bandwidth, and lower power consumption than DDR3 modules. Vengeance LPX DDR4 modules are compatibility-tested across X99 and 
+                    100 Series motherboards for reliably fast performance. There's XMP 2.0 support for trouble-free automatic overclocking. And, they're 
+                    available in multiple colors to match your motherboard, your components, or just your style.
+                </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info ram-item" id="ram-item2">
+                <hr>
+                <h2>Corsair Vengeance RGB DDR5 32GB</h2>
+                <img src="./images/item-images/RAM/Corsair Vengeance RGB DDR5 32GB.jpg" alt="ram">
+                <p class="model-number-text">Model#617915</p>
+                <p class="price-text">$95.99</p>
+                <p>
+                    In the multi-core era, the unprecedented processing speed of DDR5 DRAM ensures your high-end CPU gets data 
+                    quickly with ease. Whether you are gaming, creating content, opening 100 tabs, or multi-tasking, your gaming 
+                    PC can power through complex tasks faster than ever before.
+                </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info ram-item" id="ram-item3">
+                <hr>
+                <h2>TEAMGROUP T-Force Delta RGB</h2>
+                <img src="./images/item-images/RAM/TEAMGROUP T-Force Delta RGB.jpg" alt="ram">
+                <p class="model-number-text">Model#617916</p>
+                <p class="price-text">$255.99</p>
+                <p>
+                    TEAM GROUP T-FORCE gaming series once again released the all new luminous memory module - DELTA RGB. The R on the heat 
+                    spreader represents Revolution, and also stands for creative concept with an uncompromised spirit. The heat spreader is 
+                    built with lighter, thinner and high quality metal material. The colorful light changes make the hollow "R" on the front 
+                    even more stereoscopic, and echo the ultra wide angle luminous area. The extraordinary Revolution will provide players a 
+                    new experience never seen before.
+                </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info ram-item" id="ram-item4">
+                <hr>
+                <h2>TEAMGROUP T-Force Vulcan Z</h2>
+                <img src="./images/item-images/RAM/TEAMGROUP T-Force Vulcan Z.jpg" alt="ram">
+                <p class="model-number-text">Model#617917</p>
+                <p class="price-text">$125.99</p>
+                <p>
+                    T-FORCE VULCAN Z DDR4 gaming memory has been tested rigorously by the T-FORCE laboratory. Every overclocking 
+                    memory is tested for complete compatibility and stability. This offers gamers a DDR4 memory with excellent 
+                    quality, optimal performance, stability and compatibility. Gamers are able to fully enjoy the finest and 
+                    smoothest gaming experience and an extreme high speed performance without any lag.
+                </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info psu-item" id="psu-item1">
+                <h2>Thermaltake SMART 700W</h2>
+                <img src="./images/assets/psu.jpg" alt="psu">
+                <p class="model-number-text">PS-SPD-0700NPCWUS-W</p>
+                <p class="price-text">$89.99</p>
+                <p>
+                    Incorporating various high-quality components, the Smart Series &#8212; models are rated from 500W to 700W &#8212; saves energy through its 
+                    high efficiency of up to 86% and accommodates any mainstream build with the most demanding requirements. An embedded intelligent 
+                    cooling fan delivers excellent airflow at an exceptionally low noise level. Additionally, the Single +12V rail design enables non-stop 
+                    usage with stable and reliable performance. 
+                </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info psu-item" id="psu-item2">
+                <hr>
+                <h2>EVGA SuperNOVA 650 P5</h2>
+                <img src="./images/item-images/Power Suppy/EVGA SuperNOVA 650 P5.jpg" alt="psu">
+                <p class="model-number-text">Model#621794</p>
+                <p class="price-text">$69.99</p>
+                <p>
+                    IThe EVGA SuperNOVA P5 joins the elite ranks of the EVGA 80 PLUS Platinum power supplies. These power supplies 
+                    continue to push the envelope with the latest certifications and Intel® power-on standards. Replete with 80 
+                    PLUS Platinum-rated efficiency, a fully-modular cable design, 100% Japanese capacitors, and an ultra-quiet 
+                    135mm Fluid Dynamic bearing fan with EVGA ECO mode, these power supplies are built for performance and silence. 
+                </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info psu-item" id="psu-item3">
+                <hr>
+                <h2>Thermaltake SMART 700W</h2>
+                <img src="./images/item-images/Power Suppy/RMx Series RM650x.jpg" alt="psu">
+                <p class="model-number-text">Model#621795</p>
+                <p class="price-text">$129.99</p>
+                <p>
+                    The RM650x is a high performance PSU featuring great build quality and a very silent operation. It is 
+                    offered at a fair price and the ten-year warranty is the cherry on top. Its major problem seems to be the 
+                    harsh competition from EVGA's similar priced offerings, especially the 650 P2 model.
+                </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info motherboard-item" id="motherboard-item1">
+                <h2>ROG-Maximus Z690 Extreme</h2>
+                <img src="./images/item-images/MotherBoard/ROG-Maximus Z690 Extreme .jpg" alt="motherboard">
+                <p class="model-number-text">Model#732795</p>
+                <p class="price-text">$199.99</p>
+                <p>
+                    ROG Maximus Z690 Extreme represents the ultimate in enthusiast motherboard design for those who want the best possible option that excels at 
+                    both air and liquid cooling for 12th Gen Intel® Core™ CPUs. And this platform is packed with the most features that you will find on a ROG 
+                    Z690 motherboard, including heavy-duty 24+1 power stages, ASUS Enhanced Memory Profiles for top-notch DDR5 speeds, multiple PCIe 5.0 slots, 
+                    and the exclusive AniMe Matrix™ LED Display.
+                </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info motherboard-item" id="motherboard-item2">
+                <hr>
+                <h2>ROG-Strix B550-F</h2>
+                <img src="./images/item-images/MotherBoard/ROG-Strix B550-F.jpg" alt="motherboard">
+                <p class="model-number-text">Model#732796</p>
+                <p class="price-text">$229.99</p>
+                <p>
+                    ROG Strix B550 Gaming series motherboards offer a feature-set usually found in the higher-end ROG Strix X570 Gaming series, 
+                    including the latest PCIe® 4.0. With robust power delivery and effective cooling, ROG Strix B550 Gaming is well-equipped to handle 3rd Gen 
+                    AMD Ryzen™ CPUs. Boasting futuristic aesthetics and intuitive ROG software, ROG Strix B550-F Gaming gives you a head start on your dream 
+                    build.
+                </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info case-item" id="case-item1">
+                <h2>Fractal Design Torrent Black E-ATX</h2>
+                <img src="./images/item-images/Cases/Fractal Design Torrent Black E-ATX.jpg" alt="ssd">
+                <p class="model-number-text">Model#593759</p>
+                <p class="price-text">$79.99</p>
+                <p>
+                    The Torrent is built to maximize cooling potential straight out of the box. Main standouts include a brand-new component layout, the open front 
+                    grille and five included fans - two of which are our 180 x 38 mm Dynamic PWM or Prisma RGB fans custom-made to achieve maximum air cooling while 
+                    maintaining controlled noise levels. Enabling excellent cooling performance (with or without water-loops), the Torrent is a perfect fit for 
+                    high-end users who want a case that can keep up with an ever-expanding market of hardware upgrades.
+
+                </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info ssd-item" id="ssd-item1">
+                <h2>WD Black 1TB NVMe</h2>
+                <img src="./images/item-images/SSD/WD Black 1TB NVMe.jpg" alt="ssd">
+                <p class="model-number-text">Model#843683</p>
+                <p class="price-text">$99.99</p>
+                <p>
+                    Crush load times and slash throttling, lagging, and model pop-ins with the WD_BLACK™ SN850X NVMe™ SSD, the purposebuilt gaming drive that lets you compete at your absolute peak.
+                    Get the ultimate gaming edge over your competition with insane speeds up to 7,300 MB/s for top-level performance and ridiculously short load times.
+                    Soup up your gaming experience with extremely low latency that loads graphics fast with minimal stutter and lagging for smooth, satisfying action.
+                    A range of capacities from 1TB to 4TB means you get to keep more of today's games that can take up 200GB or more of storage.
+                    The 1TB and 2TB drives offer optional RGB lighting plus a heatsink to help maintain peak performance through the most intense gaming sessions.
+                    Game Mode 2.0 serves up even more PC performance-boosting features like load prediction to ready game assets for fast in-game loading.
+                    Output approaching the limits of the PCIe® Gen4 interface helps you get ultra-fast performance out of your storage and system components.
+
+                </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info coolerandfan-item" id="coolerandfan-item1">
+                <h2>Corsair LL120 RGB Fans</h2>
+                <img src="./images/item-images/Coolers&Fans/Corsair LL120 RGB Fans.jpg" alt="cooler-fan">
+                <p class="model-number-text">Model#704108</p>
+                <p class="price-text">$49.99</p>
+                <p>
+                    Complete your CORSAIR LL RGB-cooled system with an additional fan, featuring 16 individually addressable RGB LEDs split between two 
+                    separate light loops.
+                    Reflects light for brighter lighting and matches the clean, refined look of other white CORSAIR products.
+                    Create dazzling lighting patterns and effects with powerful CORSAIR iCUE software, bringing your system to life with dynamic RGB 
+                    lighting synchronized across all your iCUE compatible products. Requires a CORSAIR Lighting Node Pro and RGB LED Fan Hub (not included).
+                    Dynamically control fan speed from 360 RPM to 2,200 RPM to minimize noise or maximize airflow.
+                </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info peripheral-item" id="peripheral-item1">
+                <h2>G413 + G502x Keyboard and Mouse</h2>
+                <img src="./images/item-images/Peripherals/G413+G502x.jpg" alt="peripheral">
+                <p class="model-number-text">Model#248027</p>
+                <p class="price-text">$39.99</p>
+                <p>
+                    G413 TKL SE features tactile mechanical switches, 6-key rollover anti-ghosting, PBT keycaps and durable aluminum alloy build-all in a 
+                    tenkeyless design.
+
+                    The world's most popular gaming mouse-now reinvented and redesigned. The G502 X features the latest innovations in gaming technology, 
+                    including LIGHTFORCE: an all-new hybrid optical-mechanical switch technology. Now, incredible speed and reliability, as well as precise 
+                    actuation, are one. With HERO 25K sub-micron sensor, redesigned reversible/ removable DPI-shift button, updated scroll wheel with dual 
+                    hyper-fast and precise ratchet modes, and thin-wall molding and lightened scroll wheel to reduce weight.
+                </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info peripheral-item" id="peripheral-item2">
+                <hr>
+                <h2>G413 Keyboard</h2>
+                <img src="./images/item-images/Peripherals/G413.jpg" alt="peripheral">
+                <p class="model-number-text">Model#248028</p>
+                <p class="price-text">$19.99</p>
+                <p>
+                    G413 TKL SE features tactile mechanical switches, 6-key rollover anti-ghosting, PBT keycaps and durable aluminum alloy build-all in a 
+                    tenkeyless design.
+                </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info peripheral-item" id="peripheral-item3">
+                <hr>
+                <h2>G502x Gaming Mouse</h2>
+                <img src="./images/item-images/Peripherals/G502x.jpg" alt="peripheral">
+                <p class="model-number-text">Model#248029</p>
+                <p class="price-text">$29.99</p>
+                <p>
+                    The world's most popular gaming mouse-now reinvented and redesigned. The G502 X features the latest innovations in gaming technology, 
+                    including LIGHTFORCE: an all-new hybrid optical-mechanical switch technology. Now, incredible speed and reliability, as well as precise 
+                    actuation, are one. With HERO 25K sub-micron sensor, redesigned reversible/ removable DPI-shift button, updated scroll wheel with dual 
+                    hyper-fast and precise ratchet modes, and thin-wall molding and lightened scroll wheel to reduce weight.
+                </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+            </div>
+
+            <div class="item-info pre-build-item" id="pre-build-item1">
+                <h2>Cyberpower Pre-Built Desktop Computer</h2>
+                <img id="pre-build-img" src="./images/assets/pre-build.jpg" alt="pre-build">
+                <p class="model-number-text">Model#984202</p>
+                <p class="price-text">$799.99</p>
+                <p>
+                    Get the pinnacle of gaming performance with the CYBERPOWERPC Gamer Supreme series of gaming computers. The Gamer Supreme series features 
+                    monstrous processing power combined with the latest and greatest graphics cards to handle even the most demanding games on the market. An 
+                    immense RAM allows you to easily tackle system-intensive applications such as video editing, and ensures a lag-free multitasking experience. 
+                    A lightning-fast SSD boot drive provides quick load times for your most used games and applications. The Gamer Supreme series looks as 
+                    stunning as it performs, as all these high-end components are packaged in a striking, sleek chassis.
+                </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+
+                <h2>Specs</h2>
+                <p>GPU: GeForce RTX 3060
+                    <br>
+                    Operating System: Windows 11 Home
+                    <br>
+                    Memory: 16GB
+                    <br>
+                    SSD Capacity: 1TB
+                    <br>
+                    CPU: i7-12700KF
+                    <br>
+                    Power Supply: 600 Watts
+                </p>
+            
+            </div>
+
+            <div class="item-info pre-build-item" id="pre-build-item2">
+                <hr>
+                <h2>ROG Strix G35DX-DXR99X Gaming Desktop</h2>
+                <img id="pre-build-img" src="./images/item-images/Pre-Builts/ROG Strix G35DX-DXR99X Gaming Desktop.jpg" alt="pre-build">
+                <p class="model-number-text">Model#984203</p>
+                <p class="price-text">$1299.99</p>
+                <p>
+                    Go extreme with the ASUS ROG Strix G35DX-DXR99X Gaming Desktop. Experience speedy gaming and content creation 
+                    with its AMD Ryzen™ 9 5900X processor and GeForce RTX™ 3090 graphics, plus get ready for seamless multitasking 
+                    with its 32GB DDR4 memory, and 1TB SSD capacity plus 2TB HDD capacity. With Wi-Fi 5 (802.11ac) and Bluetooth 5.0 
+                    support, enjoy fast wireless connectivity for seamless online gaming and file transfers. Take advantage of 
+                    Windows 10 Home&#8217;s diverse collection of gamer-friendly enhancements and built-in protections.
+                </p>
+                <p>AVAILABILITY: <img class="checkmark" src="./images/assets/checkmark.png" alt="checkmark"> In Store</p>
+
+                <h2>Specs</h2>
+                <p>GPU: NVIDIA GeForce RTX 30690
+                    <br>
+                    Operating System: Windows 10 Home
+                    <br>
+                    Memory: 32GB
+                    <br>
+                    SSD Capacity: 1TB
+                    <br>
+                    HDD Capacity: 2TB
+                    <br>
+                    CPU: AMD Ryzen 9 9500x
+                    <br>
+                    Power Supply: 850 Watts
+                </p>
+            
+            </div>
+
+        </div>
+
     </main>
+
     <div id="footer"></div>
+
+    <script>
+
+        // this script shows and hides the item divs when radio buttons are selected
+        $(document).ready(function(){
+
+            $('input[type="radio"]').click(function(){
+
+                var inputValue = $(this).attr("value");
+                var targetBox = $("." + inputValue);
+                $(".item-info").not(targetBox).hide();
+                $(targetBox).show();
+            });
+
+        });
+
+        $(document).ready(function(){
+
+            $('input[type="radio"]').click(function(){
+
+                var inputValue = $(this).attr("value");
+                var targetBox = $("." + inputValue);
+                $(".product-brands").not(targetBox).hide();
+                $(targetBox).show();
+            });
+
+        });
+
+    </script>
+
 </body>
 
 </html>
