@@ -8,8 +8,6 @@ main {
 
 .sidebar-div {
 
-    /* debugging borders  */
-    /* border: 1px solid black; */
     width: 340px;
     height: 35%;
     margin-top: 14px;
@@ -62,8 +60,6 @@ input[type=radio]:checked {
 
 .item-div {
 
-    /* debugging borders  */
-    /* border: 1px solid blue; */
     width: 800px;
 
 }
