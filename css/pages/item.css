@@ -44,7 +44,6 @@ input[type=radio]{
     border: 2px solid rgb(97, 97, 97);
     border-radius: 50%;
     transition: 0.1s;
-    margin-right: 4px;
 
 }
 
@@ -59,6 +58,12 @@ input[type=radio]:checked {
 
     background-color: lightblue;
     border: 2px solid black;
+
+}
+
+label {
+
+    padding-left: 4px;
 
 }
 
