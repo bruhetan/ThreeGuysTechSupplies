@@ -27,46 +27,36 @@
 <body>
     <div id="header"></div>
     <div class="featured-product">
-        <img class="featured-image active" src="images/feature-test-image.png" alt="Feature placeholder">
-        <img class="featured-image" src="images/logo/logo-black.png" alt="Feature placeholder">
-        <img class="featured-image" src="images/feature-test-image.png" alt="Feature placeholder">
-        <img class="featured-image" src="images/feature-test-image.png" alt="Feature placeholder">
-        <img class="featured-image" src="images/feature-test-image.png" alt="Feature placeholder">
+        <img class="featured-image active" src="images/featured/AMD feature.jpg" alt="Feature placeholder">
+        <img class="featured-image" src="images/featured/Asus feature.jpg" alt="Feature placeholder">
+        <img class="featured-image" src="images/featured/MSI feature.jpg" alt="Feature placeholder">
+        <img class="featured-image" src="images/featured/feature-test-image.png" alt="Feature placeholder">
         <button class="prev" onclick="prevImage()">&#10094;</button>
         <button class="next" onclick="nextImage()">&#10095;</button>
         <script src="scripts/home/slider.js"></script>
+        <script>
+            window.onload = function () {
+                startSlideShow();
+            };
+        </script>
     </div>
     <main>
 
         <div class="dealOfTheDay">
             <h2>Deals of the day</h2>
+            <div id="horizontal-line-separator"></div>
             <div id="dealOfTheDayItems">
                 <div class="item-box">
-                    <div class="item">
-                        <img src="images/logo/logo-color.png" alt="">
-                        <a href="about.html">
-                            <div class="item-name">
-                                <p>Asus Tuf Gaming Geforce RTX 3070</p>
-                                <span>product number here</span>
-                            </div>
-                            <p>
-                                <span style="color:red">$950.34 </span><span
-                                    style="text-decoration: line-through; color: black;">$1,345.00</span>
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="item-box">
                     <a href="about.html">
                         <div class="item">
-                            <img src="images/logo/logo-color.png" alt="">
+                            <img src="images/item-images/MotherBoard/ROG-Strix B550-F.jpg" alt="">
                             <div class="item-name">
-                                <p>Asus Tuf Gaming Geforce RTX 3070</p>
-                                <span>product number here</span>
+                                <p>Asus Rog Strix B550-F Gaming WIFI II</p>
+                                <span>ROG STRIX B550-F GAMING WIFI II</span>
                             </div>
                             <p>
-                                <span style="color:red">$950.34 </span><span
-                                    style="text-decoration: line-through; color: black;">$1,345.00</span>
+                                <span style="color:red">$229.99 </span><span
+                                    style="text-decoration: line-through; color: black;">$259.99</span>
                             </p>
                         </div>
                     </a>
@@ -74,14 +64,14 @@
                 <div class="item-box">
                     <a href="about.html">
                         <div class="item">
-                            <img src="images/logo/logo-color.png" alt="">
+                            <img src="images/item-images/CPU/AMD-Ryzen-5.jpg" alt="">
                             <div class="item-name">
-                                <p>Asus Tuf Gaming Geforce RTX 3070</p>
-                                <span>product number here</span>
+                                <p>AMD Ryzen 5 5600X 6-Core/12-Thread</p>
+                                <span>100-100000065BOX</span>
                             </div>
                             <p>
-                                <span style="color:red">$950.34 </span><span
-                                    style="text-decoration: line-through; color: black;">$1,345.00</span>
+                                <span style="color:red">$224.99 </span><span
+                                    style="text-decoration: line-through; color: black;">$429.99</span>
                             </p>
                         </div>
                     </a>
@@ -89,14 +79,59 @@
                 <div class="item-box">
                     <a href="about.html">
                         <div class="item">
-                            <img src="images/logo/logo-color.png" alt="">
+                            <img src="images/item-images/CPU/Intel-Corei7-12gen.jpg" alt="">
                             <div class="item-name">
-                                <p>Asus Tuf Gaming Geforce RTX 3070</p>
-                                <span>product number here</span>
+                                <p>Intel Core i7-12700K Desktop Processor</p>
+                                <span>BX8071512700K</span>
                             </div>
                             <p>
-                                <span style="color:red">$950.34 </span><span
-                                    style="text-decoration: line-through; color: black;">$1,345.00</span>
+                                <span style="color:red">$399.99 </span><span
+                                    style="text-decoration: line-through; color: black;">$559.99</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-box">
+                    <a href="about.html">
+                        <div class="item">
+                            <img src="images/item-images/RAM/TEAMGROUP T-Force Delta RGB.jpg" alt="">
+                            <div class="item-name">
+                                <p>TeamGroup T-FORCE DELTA RGB 16GB (2x8GB)</p>
+                                <span>TF3D416G3600HC18JDC01</span>
+                            </div>
+                            <p>
+                                <span style="color:red">$59.99 </span><span
+                                    style="text-decoration: line-through; color: black;">$89.99</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-box">
+                    <a href="about.html">
+                        <div class="item">
+                            <img src="images/item-images/GPU/Asus-TUF-3060.jpg  " alt="">
+                            <div class="item-name">
+                                <p>ASUS TUF Gaming GeForce RTX 3060 V2 OC Edition</p>
+                                <span>TUF-RTX3060-O12G-V2-GAMING</span>
+                            </div>
+                            <p>
+                                <span style="color:red">$569.99 </span><span
+                                    style="text-decoration: line-through; color: black;">$629.99</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item-box">
+                    <a href="about.html">
+                        <div class="item">
+                            <img src="images/item-images/Power Suppy/RMx Series RM650x.jpg" alt="">
+                            <div class="item-name">
+                                <p>CORSAIR RMx Series RM650x 80 PLUS Gold</p>
+                                <span>CP-9020198-NA</span>
+                            </div>
+                            <p>
+                                <span style="color:red">$139.99 </span><span
+                                    style="text-decoration: line-through; color: black;">$159.99</span>
                             </p>
                         </div>
                     </a>
@@ -104,6 +139,112 @@
             </div>
         </div>
 
+        <div class="shopByCategory">
+            <h2>Shop By Category</h2>
+            <div id="horizontal-line-separator"></div>
+            <div id="shopByCategoryItems">
+                <div class="category-box">
+                    <a href="about.html">
+                        <div class="category">
+                            <img src="images/item-images/CPU/AMD-Ryzen-9.jpg" alt="">
+                            <div class="category-name">
+                                <p>CPU</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="category-box">
+                    <a href="about.html">
+                        <div class="category">
+                            <img src="images/item-images/GPU/ROG Strix GeForce RTX 4090 OC Edition.jpg" alt="">
+                            <div class="category-name">
+                                <p>Graphics Cards</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="category-box">
+                    <a href="about.html">
+                        <div class="category">
+                            <img src="images/item-images/MotherBoard/ROG-Maximus Z690 Extreme .jpg" alt="">
+                            <div class="category-name">
+                                <p>MotherBoards</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="category-box">
+                    <a href="about.html">
+                        <div class="category">
+                            <img src="images/item-images/SSD/WD Black 1TB NVMe.jpg" alt="">
+                            <div class="category-name">
+                                <p>Internal SSDs</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="category-box">
+                    <a href="about.html">
+                        <div class="category">
+                            <img src="images/item-images/Power Suppy/EVGA SuperNOVA 650 P5.jpg" alt="">
+                            <div class="category-name">
+                                <p>Power Supplies</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="category-box">
+                    <a href="about.html">
+                        <div class="category">
+                            <img src="images/item-images/RAM/Corsair Vengeance RGB DDR5 32GB.jpg" alt="">
+                            <div class="category-name">
+                                <p>Memory</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="category-box">
+                    <a href="about.html">
+                        <div class="category">
+                            <img src="images/item-images/Coolers&Fans/Corsair LL120 RGB Fans.jpg" alt="">
+                            <div class="category-name">
+                                <p>PC Cooling & Fans</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="category-box">
+                    <a href="about.html">
+                        <div class="category">
+                            <img src="images/item-images/Coolers&Fans/Fractal Design Torrent Black E-ATX.jpg" alt="">
+                            <div class="category-name">
+                                <p>PC Cases</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="category-box">
+                    <a href="about.html">
+                        <div class="category">
+                            <img src="images/item-images/Pre-Builts/ROG Strix G35DX-DXR99X Gaming Desktop.jpg" alt="">
+                            <div class="category-name">
+                                <p>Pre-Buit Computers</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="category-box">
+                    <a href="about.html">
+                        <div class="category">
+                            <img class="peripherals" src="images/item-images/Peripherals/G502x.jpg" alt="">
+                            <div class="category-name">
+                                <p>Peripherals</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </main>
     <div id="footer"></div>
 </body>
