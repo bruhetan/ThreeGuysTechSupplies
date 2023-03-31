@@ -112,6 +112,7 @@ button {
     #dealOfTheDayItems {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .dealOfTheDay .item-box {
         width: 100%;
     }
@@ -123,11 +124,12 @@ button {
     }
 }
 
-.item-box a{
+.item-box a {
     text-decoration: none;
 }
-.item-box a:visited{
-    color: black ;
+
+.item-box a:visited {
+    color: black;
 }
 
 
@@ -161,11 +163,12 @@ button {
     font-size: 16px;
 }
 
-.item-box a{
+.item-box a {
     text-decoration: none;
 }
-.item-box a:visited{
-    color: black ;
+
+.item-box a:visited {
+    color: black;
 }
 
 
@@ -194,11 +197,11 @@ button {
     font-size: 16px;
 }
 
-.categorie-box a{
+.categorie-box a {
     text-decoration: none;
     color: black;
-
 }
-.categorie-box:visited{
-    color: black ;
+
+.categorie-box:visited {
+    color: black;
 }
