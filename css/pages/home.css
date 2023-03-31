@@ -93,6 +93,14 @@ button {
     }
 }
 
+.item-box a{
+    text-decoration: none;
+}
+.item-box a:visited{
+    color: black ;
+}
+
+
 .dealOfTheDay .item:hover {
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.4);
 }
