@@ -6,3 +6,22 @@ prebuild: https://www.canadacomputers.com/product_info.php?cPath=7_4527&item_id=
 magnifying glass icon: https://stock.adobe.com/ca/images/search-icon-button-symbol-vector-magnifying-glass-symbol-look-pictogram/226093347
 email icon: https://www.flaticon.com/free-icon/email_2989993
 checkmark: https://www.iconsdb.com/green-icons/checkmark-icon.html
+ram: https://ccimg.canadacomputers.com/Products/600x600/298/183/231551/64533.jpg
+internalSSD: https://content.etilize.com/Main/1074208363.jpg?size=1000
+motherboard: https://ccimg.canadacomputers.com/Products/600x600/125/1446/209228/50211.jpg
+Power Supply: https://ccimg.canadacomputers.com/Products/600x600/93/1497/237382/57640.jpg
+Corsair fans: https://ccimg.canadacomputers.com/Products/600x600/232/383/116311/73850.jpg
+Torrent case: https://ccimg.canadacomputers.com/Products/600x600/213/1496/199110/85970.jpg
+Pre-built ROG: https://ccimg.canadacomputers.com/Products/600x600/234/4314/195986/35840.jpg
+Peripheral Keyboard: https://resource.logitechg.com/w_1600,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g413-se/g413-se-gallery-1-new.png?v=1
+Peripheral mouse: https://ccimg.canadacomputers.com/Products/600x600/276/4912/226291/05655.jpg
+MSI Feature Banner: https://storage-asset.msi.com/global/picture/banner/banner_16642505374c858634fe65a6e028f34bd13bf61329.jpeg
+ROG Feature Banner: https://dlcdnwebimgs.asus.com/gain/8EB082FF-07AA-4802-82F2-DFF06F462F76/fwebp
+AMD Feature banner background: https://www.amd.com/system/files/2022-08/1536834-ryzen-black-segment-die-bg-right-1920x600.jpg
+AMD Feature banner CPU: https://www.amd.com/system/files/styles/992px/private/2022-12/1728141-amd-ryzen-3d-vcache-9-right-1260x709.png?itok=Lp1SWh2z
+intel I7 12thgen cpu: https://ccimg.canadacomputers.com/Products/600x600/240/384/201280/88994.jpg
+AMD ryzen 5 5000 cpu: https://ccimg.canadacomputers.com/Products/600x600/240/381/216441/08853.jpg
+Asus b550: https://ccimg.canadacomputers.com/Products/600x600/125/1445/204636/58088.jpg
+AMD ryzen 9 7950x3D: https://www.amd.com/system/files/styles/992px/private/2022-12/1728141-amd-ryzen-3d-vcache-9-right-1260x709.png?itok=Lp1SWh2z
+AMD ryzen 9 5000: https://content.etilize.com/Main/1065635186.jpg?size=Maximum
+Asus TUF 3060 V2: https://ccimg.canadacomputers.com/Products/600x600/230/522/196365/31889.jpg
