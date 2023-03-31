@@ -10,8 +10,7 @@
         <nav id="nav-bar">
             <div class="logo-container">
                 <a class="logo-link" href="home.html">
-                    <img class="logo-image" src="images/logo/logo-no-squares-no-background-black.png"
-                     alt="brand logo">
+                    <img class="logo-image" src="images/logo/logo-no-squares-no-background-black.png" alt="brand logo">
                 </a>
             </div>
 
@@ -23,31 +22,10 @@
                     <li><a class="header-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            
+
             <a href="javascript:void(0);" id="mobile-nav-button" onclick="toggleMobileNav()">
                 <img src="images/navigation-bar.png">
-              </a>
-
-            <script>
-                const mobileNav = document.getElementById('mobile-navbar');
-                const mobileNavButton = document.getElementById('mobile-nav-button');
-
-                function checkMobileBar() {
-                    if (window.innerWidth > 600) {
-                        mobileNav.style.display = "none";
-                    }
-                }
-                function toggleMobileNav() {
-                    if (mobileNav.style.display === "block") {
-                        mobileNav.style.display = "none";
-                        mobileNavButton.style.backgroundColor = 'rgba(0,0,0,0)';
-                    } else {
-                        mobileNav.style.display = "block";
-                        mobileNavButton.style.backgroundColor = 'rgb(170, 170, 170)';
-                    }};
-                window.addEventListener('resize', checkMobileBar);
-                toggleNavigation();
-            </script>
+            </a>
         </nav>
 
         <nav id="mobile-navbar">
@@ -57,6 +35,31 @@
                 <li><a class="header-link" href="about.html">About Us</a></li>
                 <li><a class="header-link" href="contact.html">Contact</a></li>
             </ul>
-        </nav>
+    </nav>
     </header>
 </body>
+
+<script>
+    const navBar = document.getElementById('nav-bar');
+    const mobileNav = document.getElementById('mobile-navbar');
+    const mobileNavButton = document.getElementById('mobile-nav-button');
+
+    function checkMobileBar() {
+        if (window.innerWidth > 600) {
+            mobileNav.style.display = "none";
+        }
+    }
+    function toggleMobileNav() {
+        if (mobileNav.style.display === "block") {
+            navBar.style.borderBottom = "2px solid black";
+            mobileNav.style.display = "none";
+            mobileNavButton.style.backgroundColor = 'rgba(0,0,0,0)';
+        } else {
+            navBar.style.borderBottom = "1px solid black";
+            mobileNav.style.display = "block";
+            mobileNavButton.style.backgroundColor = 'rgb(170, 170, 170)';
+        }
+    };
+    window.addEventListener('resize', checkMobileBar);
+    toggleNavigation();
+</script>
