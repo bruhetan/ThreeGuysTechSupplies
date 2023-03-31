@@ -2,16 +2,17 @@ main {
 
     display: flex;
     min-height: 600px;
-    justify-content: center;
+    width: 70%;
+    margin: auto;
 
 }
 
 .sidebar-div {
 
-    width: 340px;
+    box-sizing: border-box;
+    width: 240px;
     height: 35%;
-    margin-top: 14px;
-    margin-right: 80px;
+    margin: 20px 40px;
     padding: 15px;
     background-color: rgb(236, 236, 236);
     border-radius: 30px;
@@ -118,4 +119,41 @@ img.checkmark {
     width: 340px;
     height: 340px;
 
+}
+
+@media only screen and (max-width: 1200px) {
+    main {
+        width: 100%;
+    }
+    .sidebar-div {
+        margin: 20px 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        display: block;
+    }
+    .sidebar-div {
+        width: 100%;
+        margin: 0;
+        padding: 5px 15px;
+        background-color: rgb(238, 238, 238);
+        border-radius: 0;
+        box-shadow: 0 0 0 0;
+    }
+    .sidebar-div h3 {
+        margin: 0;
+    }
+    .sidebar-div ul {
+        margin: 0;
+        margin-top: 5px;
+    }
+    .item-div {
+        width: 100%;
+    }
+    .item-info {
+        width: 95%;
+        margin: auto;
+    }
 }
