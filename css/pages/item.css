@@ -34,6 +34,32 @@ main {
 
 }
 
+input[type=radio]{
+
+    appearance: none;
+    background-color: white;
+    width: 13px;
+    height: 13px;
+    border: 2px solid rgb(97, 97, 97);
+    border-radius: 50%;
+    transition: 0.1s;
+
+}
+
+input[type=radio]:hover {
+
+    background-color: lightblue;
+    border: 2px solid black;
+
+}
+
+input[type=radio]:checked {
+
+    background-color: lightblue;
+    border: 2px solid black;
+
+}
+
 .item-div {
 
     /* debugging borders  */
