@@ -15,6 +15,13 @@ main {
 
 }
 
+.sidebar-list {
+
+    list-style-type: none;
+    padding: 0;
+    
+}
+
 .item-div {
 
     /* debugging borders  */
