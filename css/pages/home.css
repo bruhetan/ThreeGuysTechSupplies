@@ -3,14 +3,14 @@
     background-repeat: no-repeat;
     border-bottom: solid 2px black;
     width: 100%;
-    height: 400px;
+    height: 350px;
     position: relative;
     overflow: hidden;
 }
 
 .featured-image {
     width: 100%;
-    height: 400px;
+    height: 100%;
     position: absolute;
     object-fit: cover;
     opacity: 0;
@@ -184,12 +184,18 @@ button {
 }
 
 @media only screen and (max-width: 1200px) {
+    .featured-product {
+        height: 300px;
+    }
     #shopByCategoryItems {
         width: 100%;
     }
 }
 
 @media only screen and (max-width: 1000px) {
+    .featured-product {
+        height: 200px;
+    }
     #shopByCategoryItems {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -197,6 +203,9 @@ button {
 
 
 @media only screen and (max-width: 800px) {
+    .featured-product {
+        height: 180px;
+    }
     #dealOfTheDayItems {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -206,6 +215,9 @@ button {
 }
 
 @media only screen and (max-width: 600px) {
+    .featured-product {
+        display: none;
+    }
     .dealOfTheDay {
         padding: 30px 0;
     }
