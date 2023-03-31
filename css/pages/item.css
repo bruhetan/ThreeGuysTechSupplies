@@ -42,6 +42,12 @@ main {
 
 }
 
+#cpu-item {
+
+    display: block;
+
+}
+
 .item-info img {
 
     width: 200px;
