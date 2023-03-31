@@ -83,7 +83,7 @@ input[type=radio]:checked {
 
 }
 
-p .checkmark {
+img.checkmark {
 
     width: 12px;
     height: 12px;
