@@ -87,13 +87,13 @@ button {
     justify-items: center;
 }
 
-.dealOfTheDay .item-box {
+.shopByCategorie .categorie-box {
     box-sizing: border-box;
     margin: 0;
     width: 90%;
 }
 
-.dealOfTheDay .item {
+.shopByCategorie .categorie {
     box-sizing: border-box;
     padding: 10px 12px;
     border: 1px solid black;
