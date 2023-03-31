@@ -35,11 +35,11 @@ button {
 }
 
 .featured-product button.prev {
-    left: 10px;
+    left: 50px;
 }
 
 .featured-product button.next {
-    right: 10px;
+    right: 50px;
 }
 
 .dealOfTheDay {
