@@ -30,32 +30,57 @@
 
     <main>
 
-        <div class="sidebar-div">
-
-            <h3>Products</h3>
-            <ul class="sidebar-list">
-                <li>
-                    <input type="radio" id="cpu" name="item" value="cpu-item" checked>
-                    <label for="cpu">CPU</label>
-                </li>
-                <li>
-                    <input type="radio" id="gpu" name="item" value="gpu-item">
-                    <label for="gpu">GPU</label>
-                </li>
-                <li>
-                    <input type="radio" id="ram" name="item" value="ram-item">
-                    <label for="ram">RAM</label>
-                </li>
-                <li>
-                    <input type="radio" id="psu" name="item" value="psu-item">
-                    <label for="psu">PSU</label>
-                </li>
-                <li>
-                    <input type="radio" id="pre-build" name="item" value="pre-build-item">
-                    <label for="pre-build">Pre-Build</label>
-                </li>
-            </ul>
-
+        <div class="sidebar">
+            <div class="sidebar-div" id="categories">
+                <h3>Categories</h3>
+                <ul class="sidebar-list">
+                    <li>
+                        <input type="radio" id="cpu" name="item" value="cpu-products" checked>
+                        <label for="cpu">CPU</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="gpu" name="item" value="gpu-item">
+                        <label for="gpu">GPU</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="ram" name="item" value="ram-item">
+                        <label for="ram">RAM</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="psu" name="item" value="psu-item">
+                        <label for="psu">PSU</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="pre-build" name="item" value="pre-build-item">
+                        <label for="pre-build">Pre-Build</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-div" id="cpu-products" style="display:none;">
+                <h3>CPU's</h3>
+                <ul class="sidebar-list">
+                    <li>
+                        <input type="radio" id="cpu" name="item" value="cpu-item" checked>
+                        <label for="cpu">CPU</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="gpu" name="item" value="gpu-item">
+                        <label for="gpu">GPU</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="ram" name="item" value="ram-item">
+                        <label for="ram">RAM</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="psu" name="item" value="psu-item">
+                        <label for="psu">PSU</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="pre-build" name="item" value="pre-build-item">
+                        <label for="pre-build">Pre-Build</label>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div id="vertical-line-separator"></div>
 
@@ -350,8 +375,8 @@
             $('input[type="radio"]').click(function(){
 
                 var inputValue = $(this).attr("value");
-                var targetBox = $("." + inputValue);
-                $(".product-brands").not(targetBox).hide();
+                var targetBox = $("#" + inputValue);
+                $(".sidebar-list").not(targetBox).hide();
                 $(targetBox).show();
             });
 
