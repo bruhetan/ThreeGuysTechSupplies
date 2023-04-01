@@ -22,12 +22,11 @@
             $("#footer").load("footer.html");
         });  
     </script>
-</head><body>
+</head>
 
+<body>
     <div id="header"></div>
-
     <main>
-
         <div class="sidebar">
             <div class="sidebar-div" id="categories">
                 <h3>Categories</h3>
@@ -79,7 +78,6 @@
         <div id="vertical-line-separator"></div>
 
         <div class="item-div">
-
             <div class="item-info cpu-item" id="cpu-item1">
                 <h2>Ryzen 7 5700x</h2>
                 <img src="./images/item-images/CPU/AMD-Ryzen-7.jpg" alt="cpu">
@@ -418,7 +416,6 @@
                     <br>
                     Power Supply: 600 Watts
                 </p>
-            
             </div>
 
             <div class="item-info pre-build-item" id="pre-build-item2">
@@ -450,29 +447,12 @@
                     <br>
                     Power Supply: 850 Watts
                 </p>
-            
             </div>
-
         </div>
-
     </main>
 <div id="footer"></div>
 
 <script>
-
-    // // this script shows and hides the item divs when radio buttons are selected
-    // $(document).ready(function () {
-
-    //     $('input[type="radio"]').click(function () {
-
-    //         var inputValue = $(this).attr("value");
-    //         var targetBox = $("." + inputValue);
-    //         $(".item-info").not(targetBox).hide();
-    //         $(targetBox).show();
-    //     });
-
-    // });
-
         $(document).ready(function () {
             $('input[type="radio"][name="category"]').click(function () {
                 var inputValue = $(this).attr("value");
