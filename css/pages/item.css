@@ -73,7 +73,7 @@ input[type=radio]:checked {
 div#vertical-line-separator {
 
     border-left: 1px solid rgb(0, 0, 0);
-    height: 220px;
+    height: 345px;
     width: 1px;
     margin: 20px 30px;
 
@@ -92,9 +92,17 @@ label {
 }
 
 .item-info {
-
+    box-sizing: border-box;
     display: none;
+    background-color: rgb(226, 226, 226);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
 
+.item-info h2 {
+    margin: 0;
+    padding: 0 0 10px 0;
 }
 
 .cpu-item {
