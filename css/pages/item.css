@@ -127,9 +127,10 @@ label {
 }
 
 .price-text {
-
-    font-size: 28px;
-
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    margin: 10px 0;
 }
 
 img.checkmark {
