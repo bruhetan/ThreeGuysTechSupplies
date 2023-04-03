@@ -11,7 +11,6 @@ main {
 
     box-sizing: border-box;
     width: 240px;
-    height: 35%;
     margin: 20px 0;
     padding: 20px;
     background-color: rgb(226, 226, 226);
@@ -74,7 +73,7 @@ input[type=radio]:checked {
 div#vertical-line-separator {
 
     border-left: 1px solid rgb(0, 0, 0);
-    height: 500px;
+    height: 345px;
     width: 1px;
     margin: 20px 30px;
 
@@ -93,9 +92,17 @@ label {
 }
 
 .item-info {
-
+    box-sizing: border-box;
     display: none;
+    background-color: rgb(226, 226, 226);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
 
+.item-info h2 {
+    margin: 0;
+    padding: 0 0 10px 0;
 }
 
 .cpu-item {
@@ -120,9 +127,10 @@ label {
 }
 
 .price-text {
-
-    font-size: 28px;
-
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    margin: 10px 0;
 }
 
 img.checkmark {

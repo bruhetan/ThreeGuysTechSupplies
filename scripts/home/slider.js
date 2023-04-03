@@ -3,31 +3,32 @@ var currentImage = 0;
 var intervalId;
 
 function nextImage() {
+    clearInterval(intervalId);
     images[currentImage].classList.remove('active');
     currentImage = (currentImage + 1) % images.length;
     images[currentImage].classList.add('active');
+    intervalId = setInterval(nextImage, 7000); 
 }
 
 function prevImage() {
+    clearInterval(intervalId); 
     images[currentImage].classList.remove('active');
     currentImage = (currentImage - 1 + images.length) % images.length;
     images[currentImage].classList.add('active');
+    intervalId = setInterval(nextImage, 7000); 
 }
-
-function startSlideShow() {
+function startSlideShow(){
     intervalId = setInterval(nextImage, 7000);
 }
-
-function stopSlideShow() {
-    clearInterval(intervalId);
-}
-
 document.addEventListener('keydown', function(event) {
     if (event.code === 'prev') {
-        intervalId = 0;
+        clearInterval(intervalId);
         prevImage();
+        startSlideShow();
     } else if (event.code === 'next') {
-        intervalId = 0;
+        clearInterval(intervalId);
         nextImage();
+        startSlideShow();
     }
 });
+

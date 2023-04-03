@@ -1,3 +1,4 @@
+/* featured product section */
 .featured-product {
     background-size: cover;
     background-repeat: no-repeat;
@@ -42,6 +43,8 @@ button {
     right: 50px;
 }
 
+
+/* deal of the day section */
 .dealOfTheDay {
     text-align: center;
     padding: 30px 80px;
@@ -119,6 +122,8 @@ button {
     color: black;
 }
 
+
+/* shop by category section */
 .shopByCategory {
     text-align: center;
     padding: 30px 80px;
@@ -183,6 +188,8 @@ button {
     color: black;
 }
 
+
+/* mobile support */
 @media only screen and (max-width: 1200px) {
     .featured-product {
         height: 300px;
