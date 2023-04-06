@@ -477,14 +477,22 @@
 <div id="footer"></div>
 
 <script>
-        $(document).ready(function () {
-            $('input[type="radio"][name="category"]').click(function () {
-                var inputValue = $(this).attr("value");
-                var targetBox = $("." + inputValue);
-                $(".item-info").not(targetBox).hide();
-                $(targetBox).show();
-            });
+    $(document).ready(function () {
+        $('input[type="radio"][name="category"]').click(function () {
+            var inputValue = $(this).attr("value");
+            var targetBox = $("." + inputValue);
+            $(".item-info").not(targetBox).hide();
+            $(targetBox).show();
         });
+
+        var hash = window.location.hash; // get the hash value from the URL
+        hash = hash.substring(1); // remove the "#" character from the hash (if it exists)
+        var radio = document.querySelector('input[type="radio"][value="' + hash + '"]'); // find the radio button with hash
+        if (radio) { // if a matching radio button was found, select it
+            $(radio).trigger('click');
+        }
+
+    });
 
 </script>
 
