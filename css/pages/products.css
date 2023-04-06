@@ -193,6 +193,6 @@ button.add-to-cart:hover {
     }
     .item-info {
         width: 95%;
-        margin: auto;
+        margin: 10px auto;
     }
 }
