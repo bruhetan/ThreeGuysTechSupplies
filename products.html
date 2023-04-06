@@ -74,6 +74,19 @@
                 </ul>
 
             </div>
+            <div class="sorting sidebar-div">
+                <h3>Sort</h3>
+                <ul class="sidebar-list">
+                    <li>
+                        <input type="radio" id="a-z" name="sort" value="a-z" onclick="sortAlphabetically()" checked>
+                        <label for="a-z">Sort A-Z</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="z-a" name="sort" value="z-a" onclick="sortReverseAlphabetically()">
+                        <label for="z-a">Sort Z-A</label>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div id="vertical-line-separator"></div>
 
@@ -484,6 +497,46 @@
             $(".item-info").not(targetBox).hide();
             $(targetBox).show();
         });
+    });
+
+    const item_headings = Array.from(document.querySelectorAll('.item-info'));
+
+    function sortAlphabetically() {
+
+        // Sort the divs alphabetically based on their text content
+        item_headings.sort((a, b) => a.textContent.localeCompare(b.textContent));
+
+        // Clear the current parent container
+        const container = document.querySelector('.item-div');
+        container.innerHTML = '';
+
+        // Append the sorted divs to the parent container
+        item_headings.forEach(div => container.appendChild(div));
+
+    }
+
+    function sortReverseAlphabetically() {
+
+        // Sort the divs alphabetically based on their text content
+        item_headings.sort((a, b) => b.textContent.localeCompare(a.textContent));
+
+        // Clear the current parent container
+        const container = document.querySelector('.item-div');
+        container.innerHTML = '';
+
+        // Append the sorted divs to the parent container
+        item_headings.forEach(div => container.appendChild(div));
+
+    }
+    sortAlphabetically()
+
+    $(document).ready(function () {
+        $('input[type="radio"][name="category"]').click(function () {
+            var inputValue = $(this).attr("value");
+            var targetBox = $("." + inputValue);
+            $(".item-info").not(targetBox).hide();
+            $(targetBox).show();
+        });
 
         var hash = window.location.hash; // get the hash value from the URL
         hash = hash.substring(1); // remove the "#" character from the hash (if it exists)
@@ -493,6 +546,7 @@
         }
 
     });
+
 
 </script>
 
