@@ -1,0 +1,50 @@
+main {
+    margin: auto;
+    text-align: left;
+    width: 70%;
+}
+
+hr {
+    margin-bottom: 22px;
+}
+
+#references {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.reference {
+    border-radius: 8px;
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reference h3 {
+    margin: 0;
+}
+.reference div {
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: 7px;
+}
+
+.reference a {
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(95, 150, 169);
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 5px;
+    width: 30px;
+    padding: 10px;
+}
+
+.reference a:hover {
+    background-color: rgb(115, 206, 237);
+}
