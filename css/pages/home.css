@@ -67,12 +67,13 @@ button {
 }
 
 .dealOfTheDay .item {
+    background-color: rgb(230, 230, 230);
     box-sizing: border-box;
     padding: 10px 12px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 25px;
     cursor: pointer;
-    transition: 0.6s ease;
+    transition: 0.5s ease;
 }
 
 .item-box a {
@@ -144,12 +145,13 @@ button {
 }
 
 .shopByCategory .category {
+    background-color: rgb(230, 230, 230);
     box-sizing: border-box;
     padding: 10px 12px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 25px;
     cursor: pointer;
-    transition: 0.6s ease;
+    transition: 0.5s ease;
     width: 140px;
     height: 180px;
 }
