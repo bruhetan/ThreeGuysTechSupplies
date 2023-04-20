@@ -5,13 +5,13 @@
     <title content="test"></title>
     <meta charset="UTF-8">
     <meta name="author" content="Three Guys: Tech Supplies">
-    <meta name="description" content="Tech Supplies Products Page">
+    <meta name="description" content="Tech Supplies Contact Page">
     <meta name="keywords" content="Prebuilds, Computer parts, RAM, CPU, GPU, PSU">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="images/logo/Tab-Icon.png" rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
-    <link rel="stylesheet" href="css/pages/products.css" type="text/css">
+    <link rel="stylesheet" href="css/pages/contact.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
@@ -20,6 +20,93 @@
         $(function () {
             $("#header").load("header.html");
             $("#footer").load("footer.html");
-        });  
+        });
     </script>
+
 </head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <div id="title">
+            <h1>Contact Us</h1>
+            <p>Have a question or comment? We'd love to hear from you! Please fill out the form below and we'll get back
+                to you as soon as possible!</p>
+        </div>
+        <div id="horizontal-line-separator"></div>
+        <div id="form-start">
+            <p>Please select an option from the drop-down.</p>
+            <select onchange="checkTopicSelection()">
+                <option value="0">Select a topic</option>
+                <option value="0">----------</option>
+                <option value="1">General Inquiry</option>
+                <option value="2">Shipping</option>
+                <option value="3">Returns & Refunds</option>
+            </select>
+        </div>
+        <div id="horizontal-line-separator"></div>
+
+        <div id="general-inquiry" class="dropdown-form">
+            <form onsubmit="submitForm()">
+                <input type="text" name="firstName" placeholder="First Name" required><br>
+                <input type="text" name="lastName" placeholder="Last Name" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <input type="tel" name="phone" placeholder="Phone Number" required><br>
+                <textarea name="message" placeholder="What do you need help with?" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div id="shipping" class="dropdown-form">
+            <form onsubmit="submitForm()">
+                <input type="text" name="shippingID" placeholder="Shipping ID" required><br>
+                <input type="text" name="firstName" placeholder="First Name" required><br>
+                <input type="text" name="lastName" placeholder="Last Name" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <input type="tel" name="phone" placeholder="Phone Number" required><br>
+                <textarea name="message" placeholder="What do you need help with?" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div id="returns" class="dropdown-form">
+            <form onsubmit="submitForm()">
+                <input type="text" name="orderID" placeholder="Order ID" required><br>
+                <input type="text" name="firstName" placeholder="First Name" required><br>
+                <input type="text" name="lastName" placeholder="Last Name" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <input type="tel" name="phone" placeholder="Phone Number" required><br>
+                <textarea name="message" placeholder="Why do you want to return this product?" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+
+    </main>
+    <div id="footer"></div>
+</body>
+
+<script>
+
+    function checkTopicSelection() {
+    var selectedOption = document.getElementsByTagName("select")[0].value;
+    var generalInquiry = document.getElementById('general-inquiry');
+    var shipping = document.getElementById('shipping');
+
+    generalInquiry.style.display = "none";
+    shipping.style.display = "none";
+    returns.style.display = "none";
+            
+        if(selectedOption === "1") {
+            generalInquiry.style.display = "block";
+        } else if(selectedOption === "2") {
+            shipping.style.display = "block";
+        } else if(selectedOption === "3") {
+            returns.style.display = "block";            
+        } 
+    }
+
+    function submitForm() {
+        alert("Thank you for contacting us! We will get back to you as soon as possible.");
+    }
+</script>
+
+</html>
