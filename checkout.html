@@ -73,7 +73,18 @@
 
 <script>
     function submitinfo() {
-        alert("Your Order Has Been Placed");
+        const inputs = document.querySelectorAll('#delivery input:not([type="submit"])');
+
+        let isFilled = true;
+        inputs.forEach((input) => {
+            if (input.required && !input.value && input.name !== 'aptNum') {
+                isFilled = false;
+            }
+        });
+
+        if (isFilled) {
+            alert("Your Order Has Been Placed");
+        }
     }
 </script>
 
