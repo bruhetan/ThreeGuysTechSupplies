@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="nav-head">
         <nav id="nav-bar">
             <div class="logo-container">
                 <a class="logo-link" href="home.html">
@@ -46,8 +46,8 @@
         </nav>
     </header>
 </body>
-
 <script>
+    const header = document.getElementById('nav-head');
     const navBar = document.getElementById('nav-bar');
     const mobileNav = document.getElementById('mobile-navbar');
     const mobileNavButton = document.getElementById('mobile-nav-button');
@@ -69,5 +69,30 @@
         }
     };
     window.addEventListener('resize', checkMobileBar);
-    toggleNavigation();
+
+
+    var prevScrollpos = window.pageYOffset;
+    var distanceScrolled = 0;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+
+        if (prevScrollpos > currentScrollPos) {
+            // User is scrolling up
+            if (distanceScrolled > 100) {
+                header.style.top = "0";
+                distanceScrolled = 0;
+            }
+            distanceScrolled = 0;
+        } else {
+            // User is scrolling down
+            distanceScrolled += currentScrollPos - prevScrollpos;
+            if (distanceScrolled > 100) {
+                header.style.top = "-85px";
+                if (mobileNav.style.display === "block") {
+                    toggleMobileNav();
+                }
+            }
+        }
+        prevScrollpos = currentScrollPos;
+    }
 </script>
