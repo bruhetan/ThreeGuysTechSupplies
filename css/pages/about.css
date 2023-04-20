@@ -1,4 +1,6 @@
 div#top-logo {
+    top: 85px;
+    position: relative;
     background-color: rgb(1, 99, 128);
     margin: auto;
 }
