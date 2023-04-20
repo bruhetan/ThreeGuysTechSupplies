@@ -1,0 +1,39 @@
+main {
+    margin: auto;
+    text-align: left;
+    width: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        width: 90%;
+    }
+}
+
+main div#title p {
+    font-size: 1.2em;
+}
+
+div#form-start {
+    margin: 20px 0;
+}
+
+.dropdown-form {
+    display: none;
+}
+
+select {
+    background-color: rgb(226, 226, 226);
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+    padding: 10px 20px;
+}
+
+textarea {
+    height: 200px;
+}
+
+div#returns textarea {
+    height: 100px;
+}
