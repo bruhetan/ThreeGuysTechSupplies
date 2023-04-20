@@ -15,10 +15,10 @@ function prevImage() {
     images[currentImage].classList.remove('active');
     currentImage = (currentImage - 1 + images.length) % images.length;
     images[currentImage].classList.add('active');
-    intervalId = setInterval(nextImage, 7000); 
+    intervalId = setInterval(nextImage, 4000); 
 }
 function startSlideShow(){
-    intervalId = setInterval(nextImage, 7000);
+    intervalId = setInterval(nextImage, 4000);
 }
 document.addEventListener('keydown', function(event) {
     if (event.code === 'prev') {
