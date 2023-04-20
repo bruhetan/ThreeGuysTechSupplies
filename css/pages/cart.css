@@ -51,6 +51,11 @@ main div#page {
     cursor: pointer;
     font-weight: bold;
     padding: 12px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#cart-item-remove button:hover {
+    background-color: rgb(255, 74, 74);
 }
 
 #total {
@@ -79,6 +84,11 @@ main div#page {
     margin-top: 12px;
     width: 100%;
     height: 65px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#total button:hover {
+    background-color: rgb(141, 250, 128);
 }
 
 #total h1, #total h2, #total h3 {
