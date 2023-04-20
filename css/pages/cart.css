@@ -94,3 +94,17 @@ main div#page {
     margin-top: 5px;
     text-decoration: underline;
 }
+
+@media only screen and (max-width: 1200px) {
+    main div#page {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #cart-item-image {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+}
