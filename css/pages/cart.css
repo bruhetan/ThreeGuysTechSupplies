@@ -52,5 +52,45 @@ main div {
     font-weight: bold;
     padding: 12px;
 }
+
+#total {
     margin: 20px 0;
+    padding: 20px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#total div {
+    display: block;
+    text-align: center;
+}
+
+#total button {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(123, 212, 112);
+    color: black;
+    cursor: pointer;
+    /* float: right; */
+    font-weight: bold;
+    font-size: 22px;
+    padding: 12px;
+    margin-top: 12px;
+    width: 100%;
+    height: 65px;
+}
+
+#total h1, #total h2, #total h3 {
+    margin: 0;
+    padding: 0;
+}
+
+#total h3, #total h2 {
+    font-weight: lighter;
+}
+
+#total h2 {
+    margin-top: 5px;
+    text-decoration: underline;
 }
