@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title content="Three Guys: Tech Supplies - Your Cart"></title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Three Guys: Tech Supplies">
+    <meta name="description" content="Tech Supplies Home Page">
+    <meta name="keywords" content="Prebuilds, Computer parts, RAM, CPU, GPU, PSU">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="images/logo/Tab-Icon.png" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/pages/cart.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <div>
+            <h1>Your Cart</h2>
+            <hr>
+            <div class="cart-item">
+                <div class="cart-item-image">
+                    <img src="images/products/RTX-3080.jpg" alt="RTX 3080">
+                </div>
+                <div class="cart-item-info">
+                    <h2>RTX 3080</h2>
+                    <p>Price: $699.99</p>
+                    <p>Quantity: 1</p>
+                    <p>Subtotal: $699.99</p>
+                </div>
+                <div class="cart-item-remove">
+                    <button>Remove</button>
+                </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+</body>
